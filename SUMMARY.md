@@ -8,4 +8,5 @@
     * [Coding Standards](backend/php/coding-standards.md)
     * [Slim Framework](backend/php/slim-framework.md)
     * [Symfony Framework](backend/php/symfony-framework.md)
+* [Coding in the open](open-source.md)
 
