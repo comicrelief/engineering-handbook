@@ -1,3 +1,6 @@
-# My Awesome Book
+# Engineering at Comic Relief
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+The aim of this engineering handbook is to provide engineers with guidelines and directions for their day to day engineering tasks. We are writing this handbook collaboratively and in the open, much like we open source many of our applications \(check out [our Github](https://github.com/comicrelief)!\)
+
+
+
