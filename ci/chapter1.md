@@ -1,6 +1,6 @@
 # Continuous Delivery
 
-An overview of our our continuous delivery strategies and tools:
+An overview of our continuous delivery strategies and tools:
 
 * Travis CI
 * Concourse CI

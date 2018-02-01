@@ -1,6 +1,0 @@
-# Front-end
-
-* Pattern Lab
-* 
-
-
