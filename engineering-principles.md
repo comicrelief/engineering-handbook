@@ -6,6 +6,7 @@ We like to apply the following engineering principles in the way we develop our 
 * API-first
 * Cloud-native
 * Real-time data and monitoring
+* [Accessibility](frontend/accessibility.md) at the heart of everything
 * Going beyond the screen
 
 We approach those principles in the following manner:
