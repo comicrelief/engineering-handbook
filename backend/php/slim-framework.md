@@ -2,7 +2,7 @@
 
 Slim is small; it doesn't add too much to think about beyond the [general coding standards](coding-standards.md) but there are a couple of things to consider.
 
-## Routes
+## Project structure
 
 In newer Slim apps we've found the most maintainable pattern to include:
 
