@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Continuous Delivery](ci/chapter1.md)
+* [Continuous Delivery](ci/overview.md)
 * [Front-end](frontend/front-end.md)
   * [Accessibility](frontend/accessibility.md)
   * [Pattern Lab](frontend/pattern-lab.md)
