@@ -52,6 +52,10 @@ Validation Testing
 - Identify bugs on different devices and report issues on Github.
 - Communicate issues with devs and make sure bugs are fixed, if not raise bug ticket.
 
+**Follow the [Browser and Device Support Mandate file](https://comicrelief.app.box.com/file/292129841782)**
+ 
+Testing on Broswerstack must be done based on the browsers, devices and OS listed in the [Browser and Device Support Matrix file](https://comicrelief.app.box.com/file/304111826495)
+
 Below are the list of things that are as part of Functional testing 
 
 - Feature functionality (acceptance tests)
@@ -87,11 +91,4 @@ Example:
 - Dev fixes the bug
 - Upon fixing the bug, QA `re-test` the fix following the testing different types of testing. 
 - Once the issue has been fixed after testing, mark the label as `passed QA` on the bug ticket
-
-
-
-
-
-
-
 
