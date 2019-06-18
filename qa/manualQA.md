@@ -5,13 +5,10 @@
 Manual testing means testing of an application manually by a human. A tester or QA performing manual testing for ensuring that a website or an application is working properly by various conditions which are written in test cases. 
 Manual testing is the process of finding the Bug, Defect or issues in the Website. The aim of a software tester or QA is how to break the system. The tester also checks the UI design, functionality, and performance of the website by clicking on various elements.
 
-
-
 **The Objective of Testing** 
 
-To ensure that the application meets the business and user requirements
-
-To identify bugs or defects in software to improve its quality
+- To ensure that the application meets the business and user requirements
+- To identify bugs or defects in software to improve its quality
 
 **QA Responsibilities**
 
@@ -27,13 +24,10 @@ To identify bugs or defects in software to improve its quality
 
 There are four different breakpoints
 
-LG - Large Desktops
-
-MD – Desktops and Tablets landscape
-
-SM – Tablets Portrait view and Mobiles Landscape
-
-XS – Mobile Portrait View
+- LG - Large Desktops
+- MD – Desktops and Tablets landscape
+- SM – Tablets Portrait view and Mobiles Landscape
+- XS – Mobile Portrait View
 
 Perform Positive and Negative testing on these different breakpoints
 
