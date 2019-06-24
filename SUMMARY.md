@@ -16,4 +16,4 @@
 * [QA](qa/bdd.md)
   * [BDD](qa/bdd.md)
 * [Coding in the open](open-source.md)
-* [CR Technology blog](https://technology.comicrelief.com/)
+* [CR Technology blog](https://medium.com/comic-relief)
