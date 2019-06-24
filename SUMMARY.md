@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [Engineering Principles](engineering-principles.md)
 * [Continuous Delivery](ci/chapter1.md)
 * [Front-end](frontend/front-end.md)
   * [Accessibility](frontend/accessibility.md)
@@ -16,4 +15,4 @@
 * [QA](qa/bdd.md)
   * [BDD](qa/bdd.md)
 * [Coding in the open](open-source.md)
-* [CR Technology blog](https://medium.com/comic-relief)
+* [Technology blog](https://medium.com/comic-relief)
