@@ -51,6 +51,8 @@ We use the following tools to ensure developers adhere to coding standards acros
 
 - **ESLint** for ensuring code quality / standards across our team.
 
+Fore more information, see the [coding standards guide here](coding-standards.md)
+
 ## Content Management Systems
 We use the following content management systems to provide an editor interface to edit consumer facing content,
 
@@ -74,6 +76,8 @@ We use the following tools and services to manage our domains,
 - **CSC** is the registrar for all of our domains and delegates the name servers to route53
 
 - **Pulumi** is used to orchestrate the cloudformation to create and manage our domains.
+
+Fore more information, see the [domain management guide here](../backend/domain-management.md)
 
 ## Hosting
 We use the following hosting providers to host our consumer facing services and applications,
