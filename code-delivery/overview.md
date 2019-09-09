@@ -5,15 +5,17 @@ costly lessons. In this section we outline the basc requirements that all delive
 should have.
 
 We separate testing and deployment of our code into two distinct stages, these are,
-- The [Pull Request (PR) stage](pull-requests.md), which is before the code has been reviewed and merged into master.
-- The [Pipeline Stage](pipelines.md), which is once the pull request has been merged into master.
+- The [Pull Request (PR) stage](pull-requests.md), which is before the code has been reviewed and merged into the 
+ projects master branch.
+- The [Pipeline Stage](pipelines.md), which is once the pull request has been merged into the projects master branch and 
+begins and then ends it journey into production.
 
 ## Sections
 * [Coding in the Open](code-in-open.md)
 * [Coding Standards](coding-standards.md)
 * [Hosting](hosting.md)
 * [Load Testing](load-testing.md)
-* [Monitoring](monitoring.md)
+* [Monitoring & Error Reporting](monitoring.md)
 * [Pipelines](pipelines.md)
 * [Pull Requests](pull-requests.md)
 * [Tooling](tooling.md)
