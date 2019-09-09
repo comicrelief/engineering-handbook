@@ -8,6 +8,7 @@ Circle CI, Netlify and Concourse CI. Over the last couple of years, we have sett
 - [Coding Standards](#coding-standards)
 - [Content Management Systems](#content-management-systems)
 - [Dependency Management](#dependency-management)
+- [Domain Management](#domain-management)
 - [Hosting](#hosting)
 - [Monitoring](#monitoring)
 - [Orchestration](#orchestration)
@@ -64,6 +65,15 @@ We use the following dependency management systems to pull in dependencies from 
 - **Composer** is used in our legacy PHP projects to bring in dependencies
 
 - **Yarn** is used in all of our NodeJS projects over NPM as we have generally found it to be faster.
+
+# Domain Management
+We use the following tools and services to manage our domains,
+
+- **AWS Route53** provides the dns for all of our domains and sub-domains.
+
+- **CSC** is the registrar for all of our domains and delegates the name servers to route53
+
+- **Pulumi** is used to orchestrate the cloudformation to create and manage our domains.
 
 ## Hosting
 We use the following hosting providers to host our consumer facing services and applications,
