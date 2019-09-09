@@ -144,4 +144,6 @@ known security vulnerabilities.
 ## Version Control Systems
 We use the following version controls systems to track changes to code and as storage for it,
 
+- **Docker Hub** is used to host docker images used for our CI/CD systems and legacy PHP applications.
+
 - **Github** is our primary VCS systems and is used for the sharing of all public and private repositories.

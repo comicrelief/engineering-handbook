@@ -3,6 +3,11 @@
 We do continuous load testing to ensure that our platforms can handle the required load in order to handle any surprises
 that could occur from high traffic events.
 
+- [Approach](#approach)
+- [Tooling](#tooling)
+- [Methodology](#methodology)
+- [Further Reading](#further-reading)
+
 ## Approach
 We will generally run the three following types of tests against our applications to ensure they hold up to the levels 
 of load that we would expect during campaign.
