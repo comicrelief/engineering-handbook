@@ -157,3 +157,5 @@ We use the following version controls systems to track changes to code and as st
 - **Docker Hub** is used to host docker images used for our CI/CD systems and legacy PHP applications.
 
 - **Github** is our primary VCS systems and is used for the sharing of all public and private repositories.
+
+- **NPM** is used to share our common tooling across projects and share with the wider programming community.
