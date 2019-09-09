@@ -49,6 +49,8 @@ complexity.
 - **S3** - Our two main use cases for S3 are to store transitional data (deltas) and to host our frontend React 
 applications.
 
+- **SQS** - Provides all message queues for applications.
+
 - **WAF** - All of our backend services have AWS WAD in front of them to provide a layer of protection from DDoS attacks
 and other forms of code injection
 
