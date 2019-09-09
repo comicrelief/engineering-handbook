@@ -1,25 +1,28 @@
 # Summary
 
 * [Introduction](README.md)
-* [Backend](backend/overview.md)
+* Backend
+  * [Overview](backend/overview.md)
   * [Coding Standards](backend/coding-standards.md)
+  * [Domain Management](backend/domain-management.md)
   * Shared Libraries
       * [Lambda Wrapper](backend/lambda-wrapper.md)
-* [Code Delivery](code-delivery/overview.md)
+* Code Delivery
+  * [Overview](code-delivery/overview.md)
   * [Coding in the Open](code-delivery/code-in-open.md)
   * [Coding Standards](code-delivery/coding-standards.md)
   * [Hosting](code-delivery/hosting.md)
+  * [Load testing](code-delivery/load-testing.md)
   * [Monitoring](code-delivery/monitoring.md)
   * [Pipelines](code-delivery/pipelines.md)
   * [Pull Requests](code-delivery/pull-requests.md)
   * [Tooling](code-delivery/tooling.md)
-* [Frontend](frontend/overview.md)
+* Frontend
+  * [Overview](frontend/overview.md)
   * [Accessibility](frontend/accessibility.md)
   * [Coding Standards](frontend/coding-standards.md)
   * Shared Libraries
       * [Pattern Lab](frontend/pattern-lab.md)
       * [React Storybook](frontend/storybook.md)
 * [QA](qa/manualQA.md)
-  * [Manual QA](qa/manualQA.md)
-  * [Load testing](qa/load-testing.md)
 * [Technology blog](https://medium.com/comic-relief)

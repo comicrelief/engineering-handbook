@@ -1,4 +1,4 @@
-# Manual QA Process
+# QA Process
 
 **What is Manual Testing?**
 

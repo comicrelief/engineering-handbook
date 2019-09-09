@@ -1,5 +1,6 @@
-# Front-end
-
+# Frontend overview
+***
+## Sections
 * [Accessibility](accessibility.md)
 * [Coding Standards](coding-standards.md)
 * Shared Libraries

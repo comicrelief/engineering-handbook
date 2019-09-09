@@ -1,5 +1,5 @@
 # Coding Standards
-
+***
 The aim for our frontend coding standards is to acheive the following goals,
 
 * simple, clean, readable

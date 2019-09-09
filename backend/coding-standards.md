@@ -1,5 +1,5 @@
 # Coding Standards
-
+***
 This page outlines the tooling and standards that we align ourselves to when writing backend applications. Our aim is to 
 Produce clean & maintainable code, If our code lacks consistency, is poorly laid out and undocumented, we are 
 adding to the overall complexity of our system.
