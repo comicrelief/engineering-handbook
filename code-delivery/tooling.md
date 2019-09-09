@@ -7,11 +7,14 @@ Circle CI, Netlify and Concourse CI. Over the last couple of years, we have sett
 - [Automated Testing](#automated-testing)
 - [Coding Standards](#coding-standards)
 - [Content Management Systems](#content-management-systems)
+- [Dependency Management](#dependency-management)
 - [Hosting](#hosting)
 - [Monitoring](#monitoring)
 - [Orchestration](#orchestration)
 - [Preview Environments](#preview-environments)
+- [Team Communication Tools](#team-communication-tools)
 - [Third Party Dependency Testing](#third-party-dependency-testing)
+- [Version Control Systems](#version-control-systems)
 
 ## API Documentation
 We use the following API documentation tools to provide API documentation to internal and external users of our services.
@@ -54,6 +57,13 @@ We use the following content management systems to provide an editor interface t
 content use across our front and backend applications.
 - **Drupal 8** is now our legacy content management system which is used by comicrelief.com and sportrelief.com and is
 hosted on **Platform.sh**
+
+## Dependency Management
+We use the following dependency management systems to pull in dependencies from third parties,
+
+- **Composer** is used in our legacy PHP projects to bring in dependencies
+
+- **Yarn** is used in all of our NodeJS projects over NPM as we have generally found it to be faster.
 
 ## Hosting
 We use the following hosting providers to host our consumer facing services and applications,
@@ -112,6 +122,13 @@ developer code changes.
 
 - **Platform.sh** used for pull request preview of our Drupal sites.
 
+## Team Communication Tools
+We use the following team communication tools to ensure a steady flow of communication within the development team,
+
+- **Pull Panda** to provide statistics and reminders around pull requests and comments around them
+
+- **Slack** provides us with a platform to communicate within our team and also provides us with alerting to issues.
+
 ## Third Party Dependency Testing
 The following tools are used to test third party dependencies within our code bases.
 
@@ -123,3 +140,8 @@ prevents installation of packages with known security issues.
 
 - **Snyk** for automated testing of code base dependencies, ensuring that packages are up to date and do not have any 
 known security vulnerabilities.
+
+## Version Control Systems
+We use the following version controls systems to track changes to code and as storage for it,
+
+- **Github** is our primary VCS systems and is used for the sharing of all public and private repositories.
