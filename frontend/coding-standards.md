@@ -1,9 +1,7 @@
 # Coding Standards
 
----
-## Coding Style
+The aim for our frontend coding standards is to acheive the following goals,
 
-### General Principle
 * simple, clean, readable
 * modular / component approach - always consider reusability and portability
 * one method, one thing
@@ -12,67 +10,47 @@
 * progressive enhancement - consider performance on different devices
 * CSS naming conventions - we use [BEM](http://getbem.com/naming/) structure
 
+## What good code should have
 
-### Style Guideline 
-
-* [MDN coding style](https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style)
-* [Javascript standard style](https://github.com/feross/standard)
-* [React/JSX standard by Airbnb](https://github.com/airbnb/javascript/tree/master/react)
-
-
----
-## Coding Review
-
->First of all, code review is about the code *NOT* the coder.
-
-### General Principle
-
-#### Code
-
-* coding Style
+* follow coding Style
     * follow guideline provide above
     * indentation 2 spaces
-* onboarding documentation
+* have onboarding documentation
     * brief statement in file header
     * at least one line of comment for code block description
     * remove commented code and log
-* logging
+* no error logging
     * no error message in console
-* security
-    * avoid [cross-site scripting vulnerabilities](https://www.owasp.org/index.php/Reviewing_Code_for_Cross-site_scripting)
+* follow security best practices
+    * avoid issues such as [cross-site scripting vulnerabilities](https://www.owasp.org/index.php/Reviewing_Code_for_Cross-site_scripting)
 * implementation
     * matches story acceptance criteria
     * matches design across breakpoint
+    * pass Level1 browsers & devices
 
-#### Look & Feel
-* copy and link
-* space and margin
-* colours
-* element behaviour across breakpoints
-* pass Level1 browsers & devices
+## Tooling
 
-
----
-## Tools
+We use the following tooling to ensure coding standards across our frontend projects,
 
 #### Code quality 
-* [JSlint](http://www.jslint.com/)
+* [ESlint](http://www.eslint.org/)
 * [CSSlint](http://csslint.net/)
 * [SCSSlint](https://github.com/brigade/scss-lint)
 
 #### Testing
-* [Jasmine](http://jasmine.github.io/)
-* [Karma](https://karma-runner.github.io/0.13/index.html)
+* [Jest](https://jestjs.io/)
+* [Mocha](https://mochajs.org/)
+* [Cypress](https://www.cypress.io/)
 
 #### Performance
 * [Google page speed insight](https://developers.google.com/speed/pagespeed/)
-* [Webpagetest](http://www.webpagetest.org/)
-* [YSlow](http://yslow.org/)
+* [Lighthouse](https://github.com/GoogleChrome/lighthouse)
 * [Phantomas](https://github.com/macbre/phantomas)
 
-
----
-#### Resource and further reading:
+## Resource and further reading
 
 * [JavaScript automated testing with Jasmine, Karma and Travis](https://medium.com/@koalamango/javascript-automated-testing-with-jasmine-karma-and-travis-c118a98223d9#.fb7rrqas4)
 * [Measure, Optimise & Automate Frontend Performance](https://medium.com/@koalamango/measure-optimise-automate-frontend-performance-d55552fccdfe#.suoyd4u91)
+* [MDN coding style](https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style)
+* [Javascript standard style](https://github.com/feross/standard)
+* [React/JSX standard by Airbnb](https://github.com/airbnb/javascript/tree/master/react)

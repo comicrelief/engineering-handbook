@@ -13,6 +13,3 @@ We code in the open for many of the projects at Comic Relief. Some of these are 
 * We sometimes use Github projects for backlog organisation and for delivering our sprints. Don't use JIRA as that is not accessible to the general public.
 
 * Are tests provided in the PR? To ensure this, use a PR template and enable Travis for running a build with tests. 
-
-
-
