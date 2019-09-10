@@ -1,12 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* Backend
-  * [Overview](backend/overview.md)
-  * [Coding Standards](backend/coding-standards.md)
-  * [Domain Management](backend/domain-management.md)
-  * Shared Libraries
-      * [Lambda Wrapper](backend/lambda-wrapper.md)
+
 * Code Delivery
   * [Overview](code-delivery/overview.md)
   * [Coding in the Open](code-delivery/code-in-open.md)
@@ -17,6 +12,12 @@
   * [Pipelines](code-delivery/pipelines.md)
   * [Pull Requests](code-delivery/pull-requests.md)
   * [Tooling](code-delivery/tooling.md)
+* Backend
+  * [Overview](backend/overview.md)
+  * [Coding Standards](backend/coding-standards.md)
+  * [Domain Management](backend/domain-management.md)
+  * Shared Libraries
+      * [Lambda Wrapper](backend/lambda-wrapper.md)
 * Frontend
   * [Overview](frontend/overview.md)
   * [Accessibility](frontend/accessibility.md)

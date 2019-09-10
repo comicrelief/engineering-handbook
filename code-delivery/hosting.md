@@ -1,8 +1,7 @@
 # Application Hosting
 ***
 
-We currently use a couple of hosting providers, with our main provider being AWS. All other providers are now mostly
-legact and are slowly being phased out.
+We currently use a couple of hosting providers, with our main provider being AWS. All other providers are now mostly legacy and are slowly being phased out.
 
 ## Providers
 - [AWS](#aws)
@@ -60,15 +59,15 @@ We do also use many other AWS services, so this is by far not the comprehensive 
 Azure is used to host our data warehouse (SSV) and it's backing data ingestion pipeline.
 
 ### Heroku
-We use heroku for Contentful preview environments for the Donation platform CMS elements.
+We use Heroku for Contentful preview environments for the Donation platform CMS elements.
 
 Deploys are triggered by webhooks from Contentful and via git commits to the master branch of the donation
 frontend.
 
 ### Netlify
-We use netlify to deploy pull request previews for all of our React frontend applications.
+We use Netlify to deploy pull request previews for all of our React frontend applications.
 
-### Platform.SH
+### Platform.sh
 Is use for the hosting of our Drupal sites and the pull request preview environments. We are currently in the process of 
 phasing out the Drupal sites in favour of React applications that will be hosted on AWS S3.
 
@@ -76,7 +75,7 @@ Deployments to platform.sh follow the same path as all other pull request enviro
 github.
 
 ### Pivotal Web Services (PWS)
-Pivotal web services is the legacy hosting platform for our legacy PHP applications. Currently the only applications that
+Pivotal Web Services is the hosting platform for our legacy PHP applications. Currently the only applications that
 are still running on it are the legacy payment service layer and payin. Our aim is to retire these by the end of 2019, 
 with the view of those being the last applications that will sit on PWS.
 

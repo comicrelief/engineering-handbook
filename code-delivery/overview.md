@@ -20,11 +20,11 @@ begins and then ends it journey into production.
 * [Pull Requests](pull-requests.md)
 * [Tooling](tooling.md)
 
-## Rules to die by
+## Rules to live by
 - No-one should ever be manually pushing code into staging or production environments.
-- Secrets should never be stored inside a code repository, they should be handled by the CI system.
+- Secrets should never be stored unencrypted inside a code repository, they should be handled by the CI system.
 - All infrastructure should be managed within code.
-- A plan of failure scenarios and their remedies should exist for every application and Service.
+- A plan of failure scenarios and their remedies should exist for every application and service.
 - Any new feature that could have an effect on how we handle load, should be load tested.
 - At the very least, end to end test should exist for every feature.
 
