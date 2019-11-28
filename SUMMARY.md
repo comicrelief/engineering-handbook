@@ -13,6 +13,7 @@
   * [Pull Requests](code-delivery/pull-requests.md)
   * [Tooling](code-delivery/tooling.md)
   * Post Mortems
+      * [Severity Levels](code-delivery/severity-levels.md)
       * [Template](code-delivery/post-mortem-template.md)
 * Backend
   * [Overview](backend/overview.md)
