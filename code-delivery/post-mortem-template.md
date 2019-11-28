@@ -26,9 +26,7 @@ Be very specific here, include exact numbers.
 | Support Requests Raised            | ?? Include any relevant links to tickets             |
 
 ## Responders
-* Who was the Incident Commander
-* Who was the scribe?
-* Who else was involved?
+Who was involved, this should be generalized and the actual person involved should not be able to be discerned from it?
 
 ## Timeline
 
