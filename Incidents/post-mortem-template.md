@@ -48,7 +48,7 @@ Some important times to include: (1) time the contributing factor began, (2) tim
 
 ## Action Items
 
-Each action item should be in the form of a JIRA ticket, and each ticket should have the same set of two tags: “sev1_YYYYMMDD” (such as sev1_20150911) and simply “sev1”. Include action items such as: (1) any fixes required to prevent the contributing factor in the future, (2) any preparedness tasks that could help mitigate the problem if it came up again, (3) remaining post-mortem steps, such as the internal email, as well as the status-page public post, (4) any improvements to our incident response process.
+Each action item should be in the form of a github ticket, and each ticket should have the same set of two tags: “sev1_YYYYMMDD” (such as sev1_20150911) and simply “sev1”. Include action items such as: (1) any fixes required to prevent the contributing factor in the future, (2) any preparedness tasks that could help mitigate the problem if it came up again, (3) remaining post-mortem steps, such as the internal email, as well as the status-page public post, (4) any improvements to our incident response process.
 
 ## Messaging
 
