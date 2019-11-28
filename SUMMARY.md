@@ -12,9 +12,6 @@
   * [Pipelines](code-delivery/pipelines.md)
   * [Pull Requests](code-delivery/pull-requests.md)
   * [Tooling](code-delivery/tooling.md)
-  * Post Mortems
-      * [Severity Levels](code-delivery/severity-levels.md)
-      * [Template](code-delivery/post-mortem-template.md)
 * Backend
   * [Overview](backend/overview.md)
   * [Coding Standards](backend/coding-standards.md)
@@ -28,5 +25,8 @@
   * Shared Libraries
       * [Pattern Lab](frontend/pattern-lab.md)
       * [React Storybook](frontend/storybook.md)
+* Incidents
+  * [Severity Levels](Incidents/severity-levels.md)
+  * [Template](Incidents/post-mortem-template.md)
 * [QA](qa/manualQA.md)
 * [Technology blog](https://medium.com/comic-relief)
