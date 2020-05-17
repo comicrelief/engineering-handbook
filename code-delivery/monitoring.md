@@ -4,7 +4,7 @@
 We use a mixture of tools to provide a clear overview of what is happening at every stage and point within our systems.
 
 - [AWS Cloudwatch](#aws-cloudwatch)
-- [IOPipe](#iopipe)
+- [Epsagon](#epsagon)
 - [Sentry](#sentry)
 - [Status Page](#status-page)
 - [Wormly](#wormly)
@@ -12,18 +12,18 @@ We use a mixture of tools to provide a clear overview of what is happening at ev
 ### AWS Cloudwatch
 All of our Serverless applications dump their logs to Cloudwatch.
 
-We will generally us cloudwatch to dig deeper into errors once an errors has been identified via IOPipe or Sentry.
+We will generally us cloudwatch to dig deeper into errors once an errors has been identified via Epsagon or Sentry.
 
-### IOPipe
-All of our Serverless applications implement IOPipe to log all invocations and the events that happend withing them
+### Epsagon
+All of our Serverless applications implement Epsagon to log all invocations and the events that happend withing them
 
-IOPipe provides the following features within our services,
+Epsagon provides the following features within our services,
 
 - **Tagging** provides us with custom tagging, searchability of sed tags and alerting when sed tags arise.
 - **Timing** provides us with timing of external providers.
 - **Alerts** provides us with alerts to slack on any event of our chosing.
 
-IOPipe is generally injected into all of our projects via the Lambda wrapper, with all timing and measurement logic
+Epsagon is generally injected into all of our projects via the Lambda wrapper, with all timing and measurement logic
 being abstracted via lambda wrapper.
 
 ### Sentry
