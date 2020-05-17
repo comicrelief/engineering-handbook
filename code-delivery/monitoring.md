@@ -6,7 +6,7 @@ We use a mixture of tools to provide a clear overview of what is happening at ev
 - [AWS Cloudwatch](#aws-cloudwatch)
 - [IOPipe](#iopipe)
 - [Sentry](#sentry)
-- [Statuspage.io](#statuspageio)
+- [Status Page](#status-page)
 - [Wormly](#wormly)
 
 ### AWS Cloudwatch
@@ -37,14 +37,16 @@ All issues are reported to the relevant slack channels for a project and also ge
 ### Slack
 We use slack to alert all relevant people when an incident occurs within our team.
 
-### Statuspage.io
-We use statuspage.io to report on all erros and to provide summaries of all issues that have happened within our systems.
-It is the first point of call for issue and error updates for our steakholders.
+### Status Page
+We use statusif to report on all errors and to provide summaries of all issues that have happened within our systems.
+It is the first point of call for issue and error updates for our stakeholders.
 
-We will generally create an error report within statupage when an issue happens and up date the issue as problems are 
+We will generally create an error report within our status page when an issue happens and up date the issue as problems are 
 resolved.
 
 Updates to incidents are reported to slack.
+
+The status page is available at [status.comicrelief.com](https://status.comicrelief.com/)
 
 ### Wormly
 We set up Wormly alerts on all of our public api's, this provides immediate alerting if any of our public facing 
