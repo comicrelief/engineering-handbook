@@ -12,22 +12,22 @@ We use a mixture of tools to provide a clear overview of what is happening at ev
 ### AWS Cloudwatch
 All of our Serverless applications dump their logs to Cloudwatch.
 
-We will generally us cloudwatch to dig deeper into errors once an errors has been identified via Epsagon or Sentry.
+We will generally use Cloudwatch to dig deeper into errors once an error has been identified via Epsagon or Sentry.
 
 ### Epsagon
-All of our Serverless applications implement Epsagon to log all invocations and the events that happend withing them
+All of our Serverless applications implement Epsagon to log all invocations and the events that happened within them
 
 Epsagon provides the following features within our services,
 
 - **Tagging** provides us with custom tagging, searchability of sed tags and alerting when sed tags arise.
 - **Timing** provides us with timing of external providers.
-- **Alerts** provides us with alerts to slack on any event of our chosing.
+- **Alerts** provides us with alerts to slack on any event of our choosing.
 
 Epsagon is generally injected into all of our projects via the Lambda wrapper, with all timing and measurement logic
 being abstracted via lambda wrapper.
 
 ### Sentry
-We us Sentry both on our frontend applications and our backend applications to record exceptions and alert us to our issues.
+We use Sentry on both our frontend and backend applications to record exceptions and alert us to our issues.
 
 Sentry is part of our core monitoring strategy and gives us error volumes, allowing us to immediately focus in on our
 biggest issues. It also automatically generates tickets in Github related to these issues.
@@ -39,9 +39,9 @@ We use slack to alert all relevant people when an incident occurs within our tea
 
 ### Status Page
 We use statusif to report on all errors and to provide summaries of all issues that have happened within our systems.
-It is the first point of call for issue and error updates for our stakeholders.
+It is the first port of call for issue and error updates for our stakeholders.
 
-We will generally create an error report within our status page when an issue happens and up date the issue as problems are 
+We will generally create an error report within our status page when an issue happens and update the issue as problems are 
 resolved.
 
 Updates to incidents are reported to slack.
@@ -49,7 +49,7 @@ Updates to incidents are reported to slack.
 The status page is available at [status.comicrelief.com](https://status.comicrelief.com/)
 
 ### Wormly
-We set up Wormly alerts on all of our public api's, this provides immediate alerting if any of our public facing 
+We set up Wormly alerts on all of our public APIs, this provides immediate alerting if any of our public facing 
 endpoints go down or if SSL certificates are expiring.
 
 All alerts from Wormly go to a range of slack channels alongside sending out email alerts.

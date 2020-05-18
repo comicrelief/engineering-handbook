@@ -17,7 +17,7 @@ A developer contributing code will take the following steps before it is merged 
 4. Once the pull request has been opened, the developer will wait for all tests to pass and fix any bugs.
 
 5. The developer will assign reviewers who will review the code and ensure that it is as good as it should be and 
-fulfils it's purpose.
+fulfils its purpose.
 
 6. Once reviewer approval has been marked on the pull request, the developer can then merge the pull request, which will
 then be passed onto the [CI/CD pipeline](pipelines.md).
@@ -26,7 +26,7 @@ It should be noted that if the project is a shared node library, this will also 
 docker image it will trigger a release to docker hub.
 
 ## Automated Tests & Tasks
-We run automated tests against all PR's to ensure that they will not cause issues when merged into production. These 
+We run automated tests against all PRs to ensure that they will not cause issues when merged into production. These 
 generally consist of a mixture of the following types of tests,
 
 - Unit Tests
