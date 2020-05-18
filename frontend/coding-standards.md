@@ -1,6 +1,6 @@
 # Coding Standards
 ***
-The aim for our frontend coding standards is to acheive the following goals,
+The aim for our frontend coding standards is to achieve the following goals,
 
 * simple, clean, readable
 * modular / component approach - always consider reusability and portability
@@ -13,7 +13,7 @@ The aim for our frontend coding standards is to acheive the following goals,
 ## What good code should have
 
 * follow coding Style
-    * follow guideline provide above
+    * follow guidelines provided above
     * indentation 2 spaces
 * have onboarding documentation
     * brief statement in file header

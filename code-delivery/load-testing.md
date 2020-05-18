@@ -28,7 +28,7 @@ the campaign period.
 
 ## Tooling
 We use Serverless Artillery to load test all of our applications, which uses Lambda to generate traffic against our 
-backend API's.
+backend APIs.
 
 We also use InfluxDB and Grafana to report on these load tests.
 

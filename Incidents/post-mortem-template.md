@@ -1,7 +1,7 @@
 **Meeting Date:** Schedule the meeting for within 5 business days after the incident. Put the date/time here.
 
 ## Overview
-Include a short sentence or two summarizing the contributing factors, timeline summary, and the impact. E.g. "On the morning of August 99th, we suffered a 1 minute SEV-1 due to a runaway process on our primary database machine. This slowness caused roughly 0.024% of alerts that had begun during this time to be delivered out of SLA."
+Include a short sentence or two summarising the contributing factors, timeline summary, and the impact. E.g. "On the morning of August 99th, we suffered a 1 minute SEV-1 due to a runaway process on our primary database machine. This slowness caused roughly 0.024% of alerts that had begun during this time to be delivered out of SLA."
 
 ## What Happened
 Include a short description of what happened.
@@ -54,9 +54,9 @@ Each action item should be in the form of a github ticket, and each ticket shoul
 
 ### Internal Email
 
-This is a follow-up for employees. It should be sent out right after the post-mortem meeting is over. It only needs a short paragraph summarizing the incident and a link to this page.
+This is a follow-up for employees. It should be sent out right after the post-mortem meeting is over. It only needs a short paragraph summarising the incident and a link to this page.
 
-Briefly summarize what happened and where the post-mortem page (this page) can be found.
+Briefly summarise what happened and where the post-mortem page (this page) can be found.
 
 ### External Message
 

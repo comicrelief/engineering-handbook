@@ -1,14 +1,14 @@
 # Code Delivery
 ***
 For a lot of our products there is only one chance to get it right and very few production opportunities to learn non 
-costly lessons. In this section we outline the basc requirements that all delivery of code and therefore the code itself 
+costly lessons. In this section we outline the basic requirements that all delivery of code and therefore the code itself 
 should have.
 
 We separate testing and deployment of our code into two distinct stages, these are,
 - The [Pull Request (PR) stage](pull-requests.md), which is before the code has been reviewed and merged into the 
  projects master branch.
-- The [Pipeline Stage](pipelines.md), which is once the pull request has been merged into the projects master branch and 
-begins and then ends it journey into production.
+- The [Pipeline Stage](pipelines.md), which is once the pull request has been merged into the project's master branch and 
+begins and then ends its journey into production.
 
 ## Sections
 * [Coding in the Open](code-in-open.md)
@@ -26,7 +26,7 @@ begins and then ends it journey into production.
 - All infrastructure should be managed within code.
 - A plan of failure scenarios and their remedies should exist for every application and service.
 - Any new feature that could have an effect on how we handle load, should be load tested.
-- At the very least, end to end test should exist for every feature.
+- At the very least, end to end tests should exist for every feature.
 
 ## Relevant Articles
 - [Pipelines Everywhere](https://medium.com/comic-relief/pipelines-everywhere-9eb284f5bee3)

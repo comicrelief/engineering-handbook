@@ -28,20 +28,20 @@ the console rather than from Cloudformation.
 
 The core services that we are using in AWS are,
 
-- **API Gateway** - All of our services that run on lambda have an API gateway instance in-front of them.
+- **API Gateway** - All of our services that run on Lambda have an API gateway instance in front of them.
 
-- **Cloudfront** - All of our public facing frontend's that are hosted in S3, have clodufront in front of them as the 
-primary CDN
+- **Cloudfront** - All of our public-facing frontends that are hosted on S3 have Cloudfront in front of them as the 
+primary CDN.
 
 - **EC2** - We are slowly phasing out all legacy services that used to be on EC2. Our aim is to simplify our hosting 
-solutions and host as little as possible that is high effort to maintain
+solutions and host as little as possible that is high effort to maintain.
 
-- **Lambda** - All of our Serverless applications run on top of Lambda, we also use it for some scheduled cron tasks.
+- **Lambda** - All of our Serverless applications run on top of Lambda; we also use it for some scheduled cron tasks.
 
-- **Lightsail** - We use lightsail for a lot of our reporting services hosting, mostly due to it's low cost and lack of 
+- **Lightsail** - We use lightsail for a lot of our reporting services hosting, mostly due to its low cost and lack of 
 complexity.
 
-- **RDS** - All of our web application databases are hosted in RDS
+- **RDS** - All of our web application databases are hosted on RDS.
 
 - **Route53** - All of our domain name records are managed within Route53.
 
@@ -51,12 +51,12 @@ applications.
 - **SQS** - Provides all message queues for applications.
 
 - **WAF** - All of our backend services have AWS WAD in front of them to provide a layer of protection from DDoS attacks
-and other forms of code injection
+and other forms of code injection.
 
-We do also use many other AWS services, so this is by far not the comprehensive list.
+We also use many other AWS services, so this is not a comprehensive list by any means.
 
 ### Azure
-Azure is used to host our data warehouse (SSV) and it's backing data ingestion pipeline.
+Azure hosts our data warehouse (SSV) and its backing data ingestion pipeline.
 
 ### Heroku
 We use Heroku for Contentful preview environments for the Donation platform CMS elements.
@@ -68,7 +68,7 @@ frontend.
 We use Netlify to deploy pull request previews for all of our React frontend applications.
 
 ### Platform.sh
-Is use for the hosting of our Drupal sites and the pull request preview environments. We are currently in the process of 
+Is used for the hosting of our Drupal sites and the pull request preview environments. We are currently in the process of 
 phasing out the Drupal sites in favour of React applications that will be hosted on AWS S3.
 
 Deployments to platform.sh follow the same path as all other pull request environments and are triggered by pushes to 
