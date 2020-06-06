@@ -20,8 +20,8 @@ Circle CI, Netlify and Concourse CI. Over the last couple of years, we have sett
 ## API Documentation
 We use the following API documentation tools to provide API documentation to internal and external users of our services.
 
-- **APIDoc** used to document all of our Serverless NodeJS API's.
-- **Swagger** used to document our legacy PHP API's.
+- **APIDoc** used to document all of our Serverless NodeJS APIs.
+- **Swagger** used to document our legacy PHP APIs.
 
 ## Automated Testing
 We use the following tooling to automatically and manually test code.
@@ -34,9 +34,9 @@ We use the following tooling to automatically and manually test code.
 
 - **Browserstack** is used by **Nightwatch** and **Behat** to test against browsers and devices.
 
-- **Cypress** is used to run headless chrome based end to end tests on frontend repositories. 
+- **Cypress** is used to run headless Chrome-based end to end tests on frontend repositories. 
 
-- **Jest** is used to take snapshots of visual components and to run unit test.
+- **Jest** is used to take snapshots of visual components and to run unit tests.
 
 - **Lighthouse** for ensuring that web pages meet accessibility, performance and SEO standards.
 
@@ -44,14 +44,14 @@ We use the following tooling to automatically and manually test code.
 
 - **Mocha** is used to write unit, feature, integration and end to end tests.
 
-- **Postman** is used to locally test API's and share those tests among developers.
+- **Postman** is used to locally test APIs and share those tests among developers.
 
 ## Coding Standards
 We use the following tools to ensure developers adhere to coding standards across projects,
 
 - **ESLint** for ensuring code quality / standards across our team.
 
-Fore more information, see the [coding standards guide here](coding-standards.md)
+For more information, see the [coding standards guide here](coding-standards.md)
 
 ## Content Management Systems
 We use the following content management systems to provide an editor interface to edit consumer facing content,
@@ -64,7 +64,7 @@ hosted on **Platform.sh**
 ## Dependency Management
 We use the following dependency management systems to pull in dependencies from third parties,
 
-- **Composer** is used in our legacy PHP projects to bring in dependencies
+- **Composer** is used in our legacy PHP projects to bring in dependencies.
 
 - **Yarn** is used in all of our NodeJS projects over NPM as we have generally found it to be faster.
 
@@ -73,11 +73,11 @@ We use the following tools and services to manage our domains,
 
 - **AWS Route53** provides the dns for all of our domains and sub-domains.
 
-- **CSC** is the registrar for all of our domains and delegates the name servers to route53
+- **CSC** is the registrar for all of our domains and delegates the name servers to route53.
 
 - **Pulumi** is used to orchestrate the cloudformation to create and manage our domains.
 
-Fore more information, see the [domain management guide here](../backend/domain-management.md)
+For more information, see the [domain management guide here](../backend/domain-management.md)
 
 ## Hosting
 We use the following hosting providers to host our consumer facing services and applications,
@@ -95,14 +95,14 @@ We use the following systems to monitor and alert us to issues within our applic
 
 - **AWS Cloudwatch** is used to store raw logs from our Serverless applications.
 
-- **IOPipe** is used to aggregate runtme and invocation information and errors from our Serverless backends and raise 
+- **IOPipe** is used to aggregate runtime and invocation information and errors from our Serverless backends and raise 
 alerts to errors.
 
 - **Sentry** is used to record and alert to errors in both frontend and backend code.
 
-- **Slack** is used to alert developers to issue from all of our monitoring tools.
+- **Slack** is used to alert developers to issues from all of our monitoring tools.
 
-- **Statuspage.io** is used to communicate issues and degradation of functionality to our steakholders.
+- **Statuspage.io** is used to communicate issues and degradation of functionality to our stakeholders.
 
 - **Wormly** used to monitor uptime of public facing endpoints and test SSL validity.
 
@@ -112,17 +112,17 @@ For more information, see the [monitoring related guide here](monitoring.md)
 We use the following products and services to orchestrate code deployment.
 
 - **CircleCI** for running tests on every pull request. These tests are great for testing 
-things in isolation are ideally suited for front-end tests or unit tests, although we’re using Cypress to do end-to-end 
+things in isolation and are ideally suited for front-end tests or unit tests, although we’re using Cypress to do end-to-end 
 testing against sandbox back-end environments.
 
 - **Concourse CI** for all staging and production deployments, running various test suites and all sort of utility / 
-housekeeping tasks that are essential to keep platforms running happily. We also use this for periodical tasks such as 
+housekeeping tasks that are essential to keeping platforms running happily. We also use this for periodical tasks such as 
 running Lighthouse, performance reviews, visual regression, or longer-running end to end tests we don’t wish to run on 
 every deployment.
 
 - **Travis CI** is now our legacy way of running tests at a pull request stage and is nearly fully replaced by CircleCI 
 
-Fore more information, see the [pipeline guide here](pipelines.md)
+For more information, see the [pipeline guide here](pipelines.md)
 
 ## Preview Environments
 As much as possible we try to provide preview environments for pull requests, to allow easy review and testing of 
@@ -134,12 +134,12 @@ developer code changes.
 
 - **Netlify** for deployment previews of our static front-end applications, mostly the different ReactJS codebases.
 
-- **Platform.sh** used for pull request preview of our Drupal sites.
+- **Platform.sh** used for pull request previews of our Drupal sites.
 
 ## Team Communication Tools
 We use the following team communication tools to ensure a steady flow of communication within the development team,
 
-- **Pull Panda** to provide statistics and reminders around pull requests and comments around them
+- **Pull Panda** to provide statistics and reminders around pull requests and comments around them.
 
 - **Slack** provides us with a platform to communicate within our team and also provides us with alerting to issues.
 
@@ -156,10 +156,10 @@ prevents installation of packages with known security issues.
 known security vulnerabilities.
 
 ## Version Control Systems
-We use the following version controls systems to track changes to code and as storage for it,
+We use the following version control systems to track changes to code and as storage for it,
 
 - **Docker Hub** is used to host docker images used for our CI/CD systems and legacy PHP applications.
 
-- **Github** is our primary VCS systems and is used for the sharing of all public and private repositories.
+- **Github** is our primary VCS system and is used for the sharing of all public and private repositories.
 
-- **NPM** is used to share our common tooling across projects and share with the wider programming community.
+- **NPM** is used to share our common tooling across projects and with the wider programming community.

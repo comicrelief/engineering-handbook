@@ -1,7 +1,7 @@
 # Coding Standards
 ***
 This page outlines the tooling and standards that we align ourselves to when writing backend applications. Our aim is to 
-Produce clean & maintainable code, If our code lacks consistency, is poorly laid out and undocumented, we are 
+produce clean & maintainable code. If our code lacks consistency, is poorly laid out and undocumented, we are 
 adding to the overall complexity of our system.
 
 ## NodeJS Projects
@@ -21,7 +21,7 @@ rules wherever possible.
 
 For our PHP projects we use [PHPCS](https://github.com/squizlabs/PHP_CodeSniffer) using the PSR2 coding standards.
 
-We also use [PHPCD](https://github.com/sebastianbergmann/phpcpd) to ensure that code is not duplicated witin the project.
+We also use [PHPCD](https://github.com/sebastianbergmann/phpcpd) to ensure that code is not duplicated within the project.
 
 
 ## Further Reading
