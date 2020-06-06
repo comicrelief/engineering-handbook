@@ -18,9 +18,9 @@ We like to apply the following engineering principles in the way we develop our 
 We approach those principles in the following manner:
 
 * Development of services over maintaining infrastructure and manual scaling. Functions over microservices, microservices over monoliths, managed services over self-managed services. [12-factor apps](https://12factor.net/) where applicable
-* Use of and contribute to open source software. [Coding in the open as our default setting](code-delivery/code-in-open.md).
-* [Continuous delivery](code-delivery/overview.md) backed up by [automated testing](code-delivery/pull-requests.html#automated-tests--tasks). Deploy to production systems multiple times a day.
-* [Real-time monitoring of live products](code-delivery/monitoring.html) through dashboards (e.g. Grafana), logs (e.g. Loggly, CloudWatch) and alerts (e.g. Wormly)
+* Use of and contribute to open source software. [Coding in the open as our default setting](service-delivery/code-in-open.md).
+* [Continuous delivery](service-delivery/overview.md) backed up by [automated testing](service-delivery/pull-requests.html#automated-tests--tasks). Deploy to production systems multiple times a day.
+* [Real-time monitoring of live products](service-delivery/monitoring.html) through dashboards (e.g. Grafana), logs (e.g. Loggly, CloudWatch) and alerts (e.g. Wormly)
 * Everything in code and everything code reviewed. In-code and live documentation over wiki documentation.
 
 ## How to contribue
