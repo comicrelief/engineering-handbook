@@ -1,5 +1,7 @@
 **Meeting Date:** Schedule the meeting for within 5 business days after the incident. Put the date/time here.
 
+**Attendees:** Who was present at the meeting
+
 ## Overview
 Include a short sentence or two summarising the contributing factors, timeline summary, and the impact. E.g. "On the morning of August 99th, we suffered a 1 minute SEV-1 due to a runaway process on our primary database machine. This slowness caused roughly 0.024% of alerts that had begun during this time to be delivered out of SLA."
 

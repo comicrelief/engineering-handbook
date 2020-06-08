@@ -8,7 +8,6 @@ We currently use a couple of hosting providers, with our main provider being AWS
 - [Azure](#azure)
 - [Heroku](#heroku)
 - [Netlify](#netlify)
-- [Platform.sh](#platformsh)
 - [Pivotal Web Services (PWS)](#pivotal-web-services-pws)
 
 ### AWS
@@ -66,13 +65,6 @@ frontend.
 
 ### Netlify
 We use Netlify to deploy pull request previews for all of our React frontend applications.
-
-### Platform.sh
-Is used for the hosting of our Drupal sites and the pull request preview environments. We are currently in the process of 
-phasing out the Drupal sites in favour of React applications that will be hosted on AWS S3.
-
-Deployments to platform.sh follow the same path as all other pull request environments and are triggered by pushes to 
-github.
 
 ### Pivotal Web Services (PWS)
 Pivotal Web Services is the hosting platform for our legacy PHP applications. Currently the only applications that

@@ -1,45 +1,107 @@
 # Cloud Security
 
-By adopting Serverless, we shift many of the traditional concerns towards our cloud provider (AWS). As the vast majority 
-of our application & infrastructure are now Serverless. 
+By adopting NoOps, we shift many of the traditional concerns towards our cloud providers and extend what the 
+infrastructure provides, shifting the traditional view of the shared security model.
 
-With No Infrastructure Based Protections, our Security is Reduced to Good Coding and Strict Configuration.
+In serverless computing the management and allocation of resources, such as uptime, server maintenance, patching, backup
+and security are all managed by cloud providers instead of systems administrators and IT operations staff. Further to 
+this, the execution environment is in an ephemeral container, with a read-only file system and highly restrictive 
+permissions. Controls like these greatly improve inherent security.
 
-Our key security considerations can be found below.
+With reduced need for infrastructure based protections, our Security is effectively reduced to solid coding and strict 
+configuration management.
+
+## Key Security Considerations
+Our key security considerations and practices can be found below.
 
 - [Authentication of users](#authentication-of-users)
-- [Authorization controls when accessing application and data](#authorization-controls)
-- [Log and maintain audit trails of all access to application and data](#audit-trail)
-- [Deploy an application layer firewall for event-data inspection](#application-layer-firewall)
-- [Detect and fix vulnerabilities in third-party dependencies](#dependency-vulnerabilities)
+- [Authorization controls](#authorization-controls)
+- [Logging and maintaining audit trails](#audit-trail)
+- [Application Layer Firewalls](#application-layer-firewall)
+- [Dependency Vulnerabilities](#dependency-vulnerabilities)
 - [Least-privileged roles and permissions](#least-privileged-access)
-- [Enforce legitimate application behavior](#legitimate-application-behavior)
+- [Legitimate application behavior](#legitimate-application-behavior)
 - [Data leak prevention](#data-leak-prevention)
-- [Scan code and configurations statically during development](#static-analysis)
-- [Removal of obsolete/unused cloud services and functions](#obsolete-application--service-removal)
+- [Static Analysis](#static-analysis)
+- [Obsolete Application & Service Removal](#obsolete-application--service-removal)
 - [End to end Observability](#end-to-end-observability)
-- [Security incidents](#security-incidents)
+- [Incidents](#incidents)
+- [Alignment with Best Practices](#alignment-with-best-practices)
+- [Security Automation](#security-automation)
+- [Penetration Testing](#penetration-testing)
 
-## Authentication of users
+### Authentication of users
 
-## Authorization controls
+### Authorization controls
 
-## Audit trail
+### Audit trail
 
-## Application Layer Firewall
+It is imperative that we are able to track changes to all code and infrastructure. With all infrastructure and code 
+being defined as code and stored within Github. 
 
-## Dependency Vulnerabilities
+This means that any changes have to be peer reviewed and are tested adequately before hitting production. Malicious 
+actors cannot update code or infrastructure, without it firstly being reviewed by other members of the engineering team. 
+Engineers should only have read only access to the GUI.
 
-## Least Privileged Access
+We also use AWS CloudTrail to track and record all changes to infrastructure and systems, to provide a log of all changes
+that are made.
 
-## Legitimate application behavior
+### Application Layer Firewall (WAF)
 
-## Data leak prevention
+We implement AWS WAF on all endpoints that we deploy. We have implemented security rules based on the OWASP 
+top 10 and also implement rules such as IP restrictions and rate limiting via the WAF.
 
-## Static Analysis
+### Dependency Vulnerabilities
 
-## Obsolete Application & Service Removal
+We utilise snyk and github dependabot to check dependencies at the pull request and pipeline level to ensure that there
+are no known security vulnerabilities within third party dependencies before shipping to production. 
 
-## End to End Observability
+### Least Privileged Access
 
-## Security Incidents
+### Legitimate application behavior
+
+### Data leak prevention
+
+### Static Analysis
+
+### Obsolete Application & Service Removal
+
+### End to End Observability
+
+Many monitoring and security tools work at the OS or the VM level. This isn’t an option with serverless computing. 
+Serverless requires monitoring performance at the invocation level.
+
+Inside all of our applications and services, we aim to surface any and all errors. This allows us to quickly quantify
+and qualify issues for inspection.
+
+We implement Epsagon distributed tracing to provide us with automated data correlation, payloa inspection, and 
+end-to-end observability within all of our microservices. This allows us to reduce service costs and accelerate 
+development through reduced application downtime, faster shipping of features, and saved time in identifying and 
+correcting issues. It also allows us to specifically target suspicious behaviour.
+
+We also implement Sentry on all of our backend's and frontend's, this allows us to also detect any client side issues and
+remedy accordingly.
+
+### Incidents
+
+See the [Incident Documentation](Incidents/overview.md) documentation for information as to how we approach this.
+
+### Alignment with Best Practices
+
+We should always be aiming to align ourselves with the best standards available within our industry. Whether by 
+implementing best in class [coding standards](../service-delivery/coding-standards.md), automating security testing as
+part of our [pipelines](../service-delivery/pipelines.md) or by engaging external reviewers from the design stage to
+ensure that our architecture is the best fit.
+
+Our core premise is to reduce and offload attack surface wherever possible. We do this by utilising cloud services and
+managed services wherever possible.
+
+Whenever implementing new services we should be aiming to engage our cloud partners to provide insight into application 
+design as part of our [SDLC](sdlc.md).
+
+More information is available in the [Tooling & Automation](tooling-and-automation.md) and 
+[Third Party Validation](third-party-validation.md) sections for more information.
+
+### Penetration Testing
+
+See the [Third Party Validation](third-party-validation.md) documentation for information as to how we approach this.
