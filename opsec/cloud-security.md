@@ -64,6 +64,9 @@ are no known security vulnerabilities within third party dependencies before shi
 
 ### Static Analysis
 
+Static analysis of all code is performed as part of a [pull request](../service-delivery/pull-requests.md). This ensures
+that many potential code flaws can be detected early, before introduction into the production environment.
+
 ### Obsolete Application & Service Removal
 
 ### End to End Observability

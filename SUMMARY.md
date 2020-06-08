@@ -38,6 +38,9 @@
   * [Pipelines](service-delivery/pipelines.md)
   * [Pull Requests](service-delivery/pull-requests.md)
   * [Tooling](service-delivery/tooling.md)
+  
+* Team Structure
+  * [Slack Channels](team-structure/slack-channels.md)
 
 * [QA](qa/manualQA.md)
 
