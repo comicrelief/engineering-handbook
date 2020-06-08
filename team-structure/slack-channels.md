@@ -1,5 +1,11 @@
 # Slack Channels
 
+This is not an exhaustive list of all the slack channels that we have, however should give you a basic starting point
+for which channels to join.
+
+Many of the channels that are not listed below are application specific and contain both the cross functional team and
+error logging for that application.
+
 ## Alerts
 - **#engineering-dangerzone-alerts** - Automated engineering alerts that by their very nature should be treated as very 
 critical.
