@@ -11,7 +11,7 @@ operations as quickly as possible.
 * [Declaration of an Incident](#declaration-of-an-incident)
 * [Separation of Responsibilities](#separation-of-responsibilities)
 * [Team Structure](#team-structure)
-* [Documentation](#documentation)
+* [Incident Documentation](#incident-documentation)
 
 ## Declaration of an Incident
 It is better to declare an incident early and then find a simple fix and close out the incident than to have to spin up 
@@ -40,7 +40,7 @@ not delegated. If appropriate, they can remove roadblocks that prevent the incid
 The Operations lead works with the incident commander to respond to the incident by applying operational tools to the 
 task at hand. The operations team should be the only group modifying the system during an incident.
 
-## Documentation
+## Incident Documentation
 
 ### Status Page
 As part of documenting and communicating an incident, we should update the [status page](https://status.comicrelief.com)

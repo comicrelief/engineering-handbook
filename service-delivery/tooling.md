@@ -21,7 +21,6 @@ Circle CI, Netlify and Concourse CI. Over the last couple of years, we have sett
 We use the following API documentation tools to provide API documentation to internal and external users of our services.
 
 - **APIDoc** used to document all of our Serverless NodeJS APIs.
-- **Swagger** used to document our legacy PHP APIs.
 
 ## Automated Testing
 We use the following tooling to automatically and manually test code.
@@ -50,6 +49,7 @@ We use the following tooling to automatically and manually test code.
 We use the following tools to ensure developers adhere to coding standards across projects,
 
 - **ESLint** for ensuring code quality / standards across our team.
+- **Prowler** for ensuring compliance of architectural standards within AWS.
 
 For more information, see the [coding standards guide here](coding-standards.md)
 
@@ -58,8 +58,6 @@ We use the following content management systems to provide an editor interface t
 
 - **Contentful** is our new content management system, which exposes a GraphQL endpoint and allows for more flexible 
 content use across our front and backend applications.
-- **Drupal 8** is now our legacy content management system which is used by comicrelief.com and sportrelief.com and is
-hosted on **Platform.sh**
 
 ## Dependency Management
 We use the following dependency management systems to pull in dependencies from third parties,

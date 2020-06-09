@@ -17,10 +17,9 @@ Our key security considerations and practices can be found below.
 - [Authentication of users](#authentication-of-users)
 - [Authorization controls](#authorization-controls)
 - [Logging and maintaining audit trails](#audit-trail)
-- [Application Layer Firewalls](#application-layer-firewall)
+- [Application Layer Firewalls](#application-layer-firewall-waf)
 - [Dependency Vulnerabilities](#dependency-vulnerabilities)
 - [Least-privileged roles and permissions](#least-privileged-access)
-- [Legitimate application behavior](#legitimate-application-behavior)
 - [Data leak prevention](#data-leak-prevention)
 - [Static Analysis](#static-analysis)
 - [Obsolete Application & Service Removal](#obsolete-application--service-removal)
@@ -32,7 +31,13 @@ Our key security considerations and practices can be found below.
 
 ### Authentication of users
 
+For how we authenticate Comic Relief users, see the 
+[external user access policy](authentication-policy.md#external-user-access-policy).
+
 ### Authorization controls
+
+For how we implement authorization controls, see the 
+[service authorization controls policy](authentication-policy.md#service-authorization-controls).
 
 ### Audit trail
 
@@ -58,9 +63,21 @@ are no known security vulnerabilities within third party dependencies before shi
 
 ### Least Privileged Access
 
-### Legitimate application behavior
+See our [authentication policy](authentication-policy.md) for how we implement zero trust.
 
 ### Data leak prevention
+
+For automated tooling to ensure alignment to coding standards, read the 
+[following section](../service-delivery/tooling.md#coding-standards) on the tooling that we implement.
+
+For how we authenticate internal users, see the 
+[internal user access policy](authentication-policy.md#internal-user-access-policy).
+
+For how we implement authorization controls, see the 
+[service authorization controls policy](authentication-policy.md#service-authorization-controls).
+
+For how we penetration test and seek external validation of architectural decissions, see the
+[third party validation policy](third-party-validation.md).
 
 ### Static Analysis
 
@@ -68,6 +85,19 @@ Static analysis of all code is performed as part of a [pull request](../service-
 that many potential code flaws can be detected early, before introduction into the production environment.
 
 ### Obsolete Application & Service Removal
+
+We implement a quarterly review of all cloud assets and services to understand usage of cloud services and retire where
+necessary. We do this in conjunction with our cloud monitoring tooling to understand application usage which provides a
+fast way for candidature to retirement.
+
+The following steps should be undertaken when retiring a service,
+
+- Inform all stakeholders and give a one month notice period of retirement.
+- Remove pipelines
+- Remove all cloud resources via cloudformation or other tooling, never in the GUI.
+- Remove logging and monitoring alerts
+- Remove DNS entries where relevant.
+- Archive relevant github repositories where necessary. 
 
 ### End to End Observability
 
