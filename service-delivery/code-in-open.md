@@ -1,5 +1,6 @@
 # Coding in the open
 ***
+
 We code in the open for many of the projects at Comic Relief. Some of these are contributed as open-source projects, whilst others might not be relevant outside Comic Relief. However, coding in the open keeps us adhering to high development standards and transparency with the tools we use.
 
 ### Before going open

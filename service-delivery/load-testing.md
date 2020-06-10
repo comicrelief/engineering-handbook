@@ -1,5 +1,6 @@
 # Load testing
 ***
+
 We do continuous load testing to ensure that our platforms can handle the required load in order to handle any surprises
 that could occur from high traffic events.
 

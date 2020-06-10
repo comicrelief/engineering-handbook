@@ -1,4 +1,5 @@
 # Slack Channels
+***
 
 This is not an exhaustive list of all the slack channels that we have, however should give you a basic starting point
 for which channels to join.

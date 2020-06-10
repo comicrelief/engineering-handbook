@@ -1,5 +1,6 @@
 # Coding Standards
 ***
+
 Coding standards makes sure that all the developers working on the project are following certain specified guidelines. 
 The code can be easily understood and a proper consistency is maintained across commits and projects.
 

@@ -24,10 +24,9 @@
     * [Incidents](opsec/Incidents/overview.md)
       * [Severity Levels](opsec/Incidents/severity-levels.md)
       * [Template](opsec/Incidents/post-mortem-template.md)
+    * [Production Requirements](opsec/prodreq.md)
     * [Runbooks](opsec/runbooks.md)
-    * [Software Development Lifecycle](opsec/sdlc.md)
     * [Third Party Validation](opsec/third-party-validation.md)
-    * [Tooling & Automation](opsec/tooling-and-automation.md)
 
 * [Service Delivery](service-delivery/overview.md)
   * [Coding in the Open](service-delivery/code-in-open.md)

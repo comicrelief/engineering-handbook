@@ -1,5 +1,6 @@
 # Pull Requests
 ***
+
 A pull request is the main and only way that code should reach a production environment.
 
 - [Developer Process](#developer-process)

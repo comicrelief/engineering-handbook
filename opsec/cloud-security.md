@@ -1,4 +1,5 @@
 # Cloud Security
+***
 
 By adopting NoOps, we shift many of the traditional concerns towards our cloud providers and extend what the 
 infrastructure provides, shifting the traditional view of the shared security model.
@@ -130,10 +131,9 @@ Our core premise is to reduce and offload attack surface wherever possible. We d
 managed services wherever possible.
 
 Whenever implementing new services we should be aiming to engage our cloud partners to provide insight into application 
-design as part of our [SDLC](sdlc.md).
+design as part of our [production requirements](prodreq.md).
 
-More information is available in the [Tooling & Automation](tooling-and-automation.md) and 
-[Third Party Validation](third-party-validation.md) sections for more information.
+More information is available in the [Third Party Validation](third-party-validation.md) section.
 
 ### Penetration Testing
 

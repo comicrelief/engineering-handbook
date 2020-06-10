@@ -14,6 +14,5 @@ create, the better.
     - [Severity Levels](Incidents/severity-levels.md)
     - [Template](Incidents/post-mortem-template.md)
 - [Runbooks](runbooks.md)
-- [Software Development Lifecycle](sdlc.md)
+- [Software Development Lifecycle](prodreq.md)
 - [Third Party Validation](third-party-validation.md)
-- [Tooling & Automation](tooling-and-automation.md)

@@ -1,4 +1,5 @@
 # Authentication Policy
+***
 
 The engineering team implements a Zero Trust model, or the practice of shifting access control from the perimeter of the
 org to the individuals.
@@ -32,7 +33,8 @@ When provisioning or using a service for internal users, the first port of call 
 providers depending on the use case.
 
 #### AWS SSO
-This is used to access any of our cloud accounts and related monitoring tooling.
+This is used to access any of our cloud accounts and related monitoring tooling. Users are able to create short lived
+access tokens using SSO to interact with AWS.
 
 #### Comic Relief SSO (Azure AD)
 This is used when accessing internal staff facing systems and is the easiest way for non-engineering members of staff to
@@ -75,3 +77,14 @@ purpose of system management, configuration, and support. They should be recogni
 activities must be logged and the logs protected and regularly reviewed.
 
 ## Service Authorization Controls
+
+The following authorization controls should be maintained for all service level communication.
+
+- All applications should have their own deployment keys and these should be cycled on a 3 month basis.
+
+- All applications should only have access to the cloud resources that they need.
+
+- Resources should not be shared between staging and production.
+
+- Communication between services should be via https or message queue and should be restricted by a unique api key for
+that service.

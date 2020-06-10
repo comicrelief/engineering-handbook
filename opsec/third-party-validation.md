@@ -1,4 +1,5 @@
 # Third Party Validation
+***
 
 Both on a yearly basis and when provisioning new applications and services, we will engage security specialists and 
 industry leaders to conduct testing against,
@@ -28,7 +29,13 @@ When provisioning a new service or application we will generally always engage a
 ideas being implemented within our systems and ensure that we are aligning ourselves with industry best practices.
 
 When taking applications into production we will conduct a well architected review alongside AWS to ensure that we are
-and have built the application inline with the best possible standards.
+and have built the application inline with the best possible standards, these reviews cover the following areas,
+
+- Operational Excellence
+- Security
+- Reliability
+- Performance Efficiency
+- Cost Optimization
 
 ### NCC
 

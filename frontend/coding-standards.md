@@ -1,5 +1,6 @@
 # Coding Standards
 ***
+
 The aim for our frontend coding standards is to achieve the following goals,
 
 * simple, clean, readable
@@ -27,6 +28,9 @@ The aim for our frontend coding standards is to achieve the following goals,
     * matches story acceptance criteria
     * matches design across breakpoint
     * pass Level1 browsers & devices
+    
+See our [production requirements](../opsec/prodreq.md) for more in depth information on the tooling and approaches that 
+should be undertaken before an application enters production. 
 
 ## Tooling
 
