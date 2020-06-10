@@ -5,6 +5,7 @@
 We use a mixture of tools to provide a clear overview of what is happening at every stage and point within our systems.
 
 - [AWS Cloudwatch](#aws-cloudwatch)
+- [AWS Cloudtrail](#aws-cloudtrail)
 - [Epsagon](#epsagon)
 - [Sentry](#sentry)
 - [Status Page](#status-page)
@@ -14,6 +15,15 @@ We use a mixture of tools to provide a clear overview of what is happening at ev
 All of our Serverless applications dump their logs to Cloudwatch.
 
 We will generally use Cloudwatch to dig deeper into errors once an error has been identified via Epsagon or Sentry.
+
+We also have a range of cloudwatch alarms monitoring resource that cannot be tracked using other tooling, these send
+alerting onwards to AWS chatbot and then onto Slack.
+
+### AWS Cloudtrail
+
+AWS CloudTrail provides compliance auditing by automatically recording and storing event logs for actions made within 
+all of our AWS account. It records all of our user and resource activity by recording AWS Management Console actions 
+and API calls.
 
 ### Epsagon
 All of our Serverless applications implement Epsagon to log all invocations and the events that happened within them

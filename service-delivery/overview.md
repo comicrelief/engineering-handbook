@@ -1,33 +1,31 @@
-# Code Delivery
+# Our Approach
 ***
 
 For a lot of our products there is only one chance to get it right and very few production opportunities to learn non 
 costly lessons. In this section we outline the basic requirements that all delivery of code and therefore the code itself 
 should have.
 
-We separate testing and deployment of our code into two distinct stages, these are,
-- The [Pull Request (PR) stage](pull-requests.md), which is before the code has been reviewed and merged into the 
- projects master branch.
-- The [Pipeline Stage](pipelines.md), which is once the pull request has been merged into the project's master branch and 
-begins and then ends its journey into production.
+Security should be at the heart of any approach that we take, the less we manage and the less attack surface that we
+create, the better.
 
 ## Sections
-* [Coding in the Open](code-in-open.md)
-* [Coding Standards](coding-standards.md)
-* [Hosting](hosting.md)
-* [Load Testing](load-testing.md)
-* [Monitoring & Error Reporting](monitoring.md)
-* [Pipelines](pipelines.md)
-* [Pull Requests](pull-requests.md)
-* [Tooling](tooling.md)
-
-## Rules to live by
-- No-one should ever be manually pushing code into staging or production environments.
-- Secrets should never be stored unencrypted inside a code repository, they should be handled by the CI system.
-- All infrastructure should be managed within code.
-- A plan of failure scenarios and their remedies should exist for every application and service.
-- Any new feature that could have an effect on how we handle load, should be load tested.
-- At the very least, end to end tests should exist for every feature.
+- [Application & Cloud Security](cloud-security.md)
+- [Authorization Policy](authorization-policy.md)
+- [Coding in the Open](code-in-open.md)
+- [Coding Standards](coding-standards.md)
+- [Gamedays](gamedays.md)
+- [Hosting](hosting.md)
+- [Incidents](Incidents/overview.md)
+    - [Severity Levels](Incidents/severity-levels.md)
+    - [Template](Incidents/post-mortem-template.md)
+- [Load Testing](load-testing.md)
+- [Monitoring & Error Reporting](monitoring.md)
+- [Pipelines](pipelines.md)
+- [Pull Requests](pull-requests.md)
+- [Runbooks](runbooks.md)
+- [Production System Requirements](../service-delivery/prodreq.md)
+- [Third Party Validation](../service-delivery/third-party-validation.md)
+- [Tooling](tooling.md)
 
 ## Relevant Articles
 - [Pipelines Everywhere](https://medium.com/comic-relief/pipelines-everywhere-9eb284f5bee3)

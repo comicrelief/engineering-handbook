@@ -1,4 +1,4 @@
-# Pipelines
+# Pipelines & Automated Testing
 ***
 
 Once code from our pipelines is merged into a master branch, it will then flow through its pipeline until it hits production.

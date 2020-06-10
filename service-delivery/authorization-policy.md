@@ -1,4 +1,4 @@
-# Authentication Policy
+# Authorization Policy
 ***
 
 The engineering team implements a Zero Trust model, or the practice of shifting access control from the perimeter of the
@@ -14,8 +14,12 @@ org to the individuals.
 * [Service Authorization Controls](#service-authorization-controls)
 
 ## External User Access Policy
+***
+
+
 
 ## Internal User Access Policy
+***
 
 Centralized access management is key to ensuring that the correct team-members have access to the correct data and 
 systems and at the correct level. 
@@ -47,27 +51,27 @@ This is used for members of the Digital & Innovation team to access development 
 As a team we have the following requirements that reduce security risks, these should be implemented in addition to the 
 Comic Relief IT policy.
 
-#### Use a password manager
+#### 1. Use a password manager
 
 Use a password manager to store your passwords. This way, you only need to memorize a few strong passwords: your master 
 password for the password manager and your laptop password. Make sure that the password manager supports two factor 
 authentication and that the password manager password is unique.
 
-#### Enable two factor authentication (if available)
+#### 2. Enable two factor authentication (if available)
 
 Use 2 factor authentication whenever it is available. This should allow you to mitigate most risks from password 
-compromise.
+compromise. We check and enforce this on a quarterly basis.
 
-#### Use your Comic Relief email account
+#### 3. Use your Comic Relief email account
 
 Don't use your personal email account to register for services. Comic Relief provides spam and virus filtering which
 will detect a wide range of vulnerabilities.
 
-#### No shared accounts
+#### 4. No shared accounts
 
 Unless there is no other option, then do not share your passwords or account with other members of staff.
 
-#### Use unique and strong passwords
+#### 5. Use unique and strong passwords
 
 Use your password manager to generate a random unique password with a minimum of 12 characters for each service you use
 
@@ -77,8 +81,13 @@ purpose of system management, configuration, and support. They should be recogni
 activities must be logged and the logs protected and regularly reviewed.
 
 ## Service Authorization Controls
+***
 
-The following authorization controls should be maintained for all service level communication.
+When considering the implementation of any service and it's communication with other resources and services within our
+domain, blast radius reduction should be of primary concern.
+
+The following authorization controls should be maintained and implemented for all service implementations & 
+communication.
 
 - All applications should have their own deployment keys and these should be cycled on a 3 month basis.
 
@@ -87,4 +96,10 @@ The following authorization controls should be maintained for all service level 
 - Resources should not be shared between staging and production.
 
 - Communication between services should be via https or message queue and should be restricted by a unique api key for
-that service.
+that service. In the event of a breach, this reduces blast area and allows us to track down the source much faster.
+
+- Data should always be encrypted at rest and in transit, the preference here is to use native AWS encryption via KMS.
+
+- Applications should be restricted by type to cloud account, an example of this would be data infrastructure not
+sitting within the same cloud account as public facing API infrastructure and only sending data to the data 
+infrastructure using a key with no read permissions. This helps to reduce the blast radius of an infrastructure breach.

@@ -1,4 +1,4 @@
-# Cloud Security
+# Application & Cloud Security
 ***
 
 By adopting NoOps, we shift many of the traditional concerns towards our cloud providers and extend what the 
@@ -29,16 +29,17 @@ Our key security considerations and practices can be found below.
 - [Alignment with Best Practices](#alignment-with-best-practices)
 - [Security Automation](#security-automation)
 - [Penetration Testing](#penetration-testing)
+- [Production Requirements](#production-requirements)
 
 ### Authentication of users
 
 For how we authenticate Comic Relief users, see the 
-[external user access policy](authentication-policy.md#external-user-access-policy).
+[external user access policy](authorization-policy.md#external-user-access-policy).
 
 ### Authorization controls
 
 For how we implement authorization controls, see the 
-[service authorization controls policy](authentication-policy.md#service-authorization-controls).
+[service authorization controls policy](authorization-policy.md#service-authorization-controls).
 
 ### Audit trail
 
@@ -64,25 +65,25 @@ are no known security vulnerabilities within third party dependencies before shi
 
 ### Least Privileged Access
 
-See our [authentication policy](authentication-policy.md) for how we implement zero trust.
+See our [authentication policy](authorization-policy.md) for how we implement zero trust.
 
 ### Data leak prevention
 
 For automated tooling to ensure alignment to coding standards, read the 
-[following section](../service-delivery/tooling.md#coding-standards) on the tooling that we implement.
+[following section](tooling.md#coding-standards) on the tooling that we implement.
 
 For how we authenticate internal users, see the 
-[internal user access policy](authentication-policy.md#internal-user-access-policy).
+[internal user access policy](authorization-policy.md#internal-user-access-policy).
 
 For how we implement authorization controls, see the 
-[service authorization controls policy](authentication-policy.md#service-authorization-controls).
+[service authorization controls policy](authorization-policy.md#service-authorization-controls).
 
 For how we penetration test and seek external validation of architectural decissions, see the
 [third party validation policy](third-party-validation.md).
 
 ### Static Analysis
 
-Static analysis of all code is performed as part of a [pull request](../service-delivery/pull-requests.md). This ensures
+Static analysis of all code is performed as part of a [pull request](pull-requests.md). This ensures
 that many potential code flaws can be detected early, before introduction into the production environment.
 
 ### Obsolete Application & Service Removal
@@ -123,8 +124,8 @@ See the [Incident Documentation](Incidents/overview.md) documentation for inform
 ### Alignment with Best Practices
 
 We should always be aiming to align ourselves with the best standards available within our industry. Whether by 
-implementing best in class [coding standards](../service-delivery/coding-standards.md), automating security testing as
-part of our [pipelines](../service-delivery/pipelines.md) or by engaging external reviewers from the design stage to
+implementing best in class [coding standards](coding-standards.md), automating security testing as
+part of our [pipelines](pipelines.md) or by engaging external reviewers from the design stage to
 ensure that our architecture is the best fit.
 
 Our core premise is to reduce and offload attack surface wherever possible. We do this by utilising cloud services and
@@ -133,8 +134,29 @@ managed services wherever possible.
 Whenever implementing new services we should be aiming to engage our cloud partners to provide insight into application 
 design as part of our [production requirements](prodreq.md).
 
-More information is available in the [Third Party Validation](third-party-validation.md) section.
+We also implement prowler as part of our security pipeline, this automatically scans all of our cloud infrastructure on a 
+weekly basis and generates a report against the following compliance guidelines,
+
+- Identity and Access Management
+- Logging
+- Monitoring
+- Networking
+- CIS Level 1
+- CIS Level 2
+- Forensics
+- GDPR
+- HIPAA
+- Trust Boundaries
+
+More information is available in the [Third Party Validation](third-party-validation.md) section as to how we engage
+external partners to ensure the security and functionality of our systems.
 
 ### Penetration Testing
 
 See the [Third Party Validation](third-party-validation.md) documentation for information as to how we approach this.
+
+### Production Requirements
+
+We have implemented a list of requirements which all of our production environments must contain in order to go to 
+production, see the [production requirements documentation](prodreq.md) for more information.
+

@@ -29,7 +29,7 @@ The aim for our frontend coding standards is to achieve the following goals,
     * matches design across breakpoint
     * pass Level1 browsers & devices
     
-See our [production requirements](../opsec/prodreq.md) for more in depth information on the tooling and approaches that 
+See our [production requirements](../service-delivery/prodreq.md) for more in depth information on the tooling and approaches that 
 should be undertaken before an application enters production. 
 
 ## Tooling

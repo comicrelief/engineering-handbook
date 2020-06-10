@@ -2,46 +2,44 @@
 
 * [Introduction](README.md)
 
-## Sections
+## Approaches
+* [Overview](service-delivery/overview.md)
+* [Application & Cloud Security](service-delivery/cloud-security.md)
+* [Authentication Policy](service-delivery/authorization-policy.md)
+* [Coding in the Open](service-delivery/code-in-open.md)
+* [Coding Standards](service-delivery/coding-standards.md)
+* [Gamedays](service-delivery/gamedays.md)
+* [Hosting](service-delivery/hosting.md)
+* [Incidents](service-delivery/Incidents/overview.md)
+    * [Severity Levels](service-delivery/Incidents/severity-levels.md)
+    * [Template](service-delivery/Incidents/post-mortem-template.md)
+* [Load testing](service-delivery/load-testing.md)
+* [Production Requirements](service-delivery/prodreq.md)
+* [Monitoring](service-delivery/monitoring.md)
+* [Pipelines & Automated Testing](service-delivery/pipelines.md)
+* [Pull Requests](service-delivery/pull-requests.md)
+* [Runbooks](service-delivery/runbooks.md)
+* [Third Party Validation](service-delivery/third-party-validation.md)
+* [Tooling](service-delivery/tooling.md)
 
-* [Backend Engineering](backend/overview.md)
+## Disciplines
+* [Backend](backend/overview.md)
   * [Coding Standards](backend/coding-standards.md)
   * [Domain Management](backend/domain-management.md)
   * Shared Libraries
       * [Lambda Wrapper](backend/lambda-wrapper.md)
 
-* [Frontend Engineering](frontend/overview.md)
+* [Frontend](frontend/overview.md)
   * [Accessibility](frontend/accessibility.md)
   * [Coding Standards](frontend/coding-standards.md)
   * Shared Libraries
       * [Pattern Lab](frontend/pattern-lab.md)
       * [React Storybook](frontend/storybook.md)
 
-* [Operational Security](opsec/overview.md)
-    * [Application & Cloud Security](opsec/cloud-security.md)
-    * [Authentication Policy](opsec/authentication-policy.md)
-    * [Gamedays](opsec/gamedays.md)
-    * [Incidents](opsec/Incidents/overview.md)
-      * [Severity Levels](opsec/Incidents/severity-levels.md)
-      * [Template](opsec/Incidents/post-mortem-template.md)
-    * [Production Requirements](opsec/prodreq.md)
-    * [Runbooks](opsec/runbooks.md)
-    * [Third Party Validation](opsec/third-party-validation.md)
-
-* [Service Delivery](service-delivery/overview.md)
-  * [Coding in the Open](service-delivery/code-in-open.md)
-  * [Coding Standards](service-delivery/coding-standards.md)
-  * [Hosting](service-delivery/hosting.md)
-  * [Load testing](service-delivery/load-testing.md)
-  * [Monitoring](service-delivery/monitoring.md)
-  * [Pipelines](service-delivery/pipelines.md)
-  * [Pull Requests](service-delivery/pull-requests.md)
-  * [Tooling](service-delivery/tooling.md)
-  
-* Team
-  * [Slack Channels](team-structure/slack-channels.md)
-
 * [QA](qa/manualQA.md)
+
+## Team
+* [Slack Channels](team-structure/slack-channels.md)
 
 ## External Resources
 
