@@ -39,6 +39,7 @@
 * [QA](qa/manualQA.md)
 
 ## Team
+* [OKR's](team-structure/okrs.md)
 * [Slack Channels](team-structure/slack-channels.md)
 
 ## External Resources
