@@ -37,6 +37,7 @@
 * [QA](qa/manualQA.md)
 
 ## Team
+* [Acronyms & Definitions](team-structure/acronyms.md)
 * [OKR's](team-structure/okrs.md)
 * [Slack Channels](team-structure/slack-channels.md)
 
