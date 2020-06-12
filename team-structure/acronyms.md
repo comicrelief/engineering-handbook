@@ -4,6 +4,7 @@
 - **365** - Year round fundraising activity
 - **Contentful** - Our content management system.
 - **Data Stores** - Data lakes where we store data from suppliers and internal systems.
+- **DS** - Design System, the single source of truth which contains all the design elements.
 - **EA** - Executive assistant to an Executive Director
 - **ED** - Executive Director of a department
 - **EDCO** - Provider of school information, used in several areas of the business.
