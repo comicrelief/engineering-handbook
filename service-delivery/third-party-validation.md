@@ -45,7 +45,8 @@ recommendations.
 ### RSM
 
 RSM have conducted audits against application logic and bossiness worthiness of our internal systems and software 
-development practices.
+development practices. This has included bringing on board technology specialists to gain an understanding and advise
+on systems processes and architecture.
 
 ### Sage
 

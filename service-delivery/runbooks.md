@@ -5,6 +5,3 @@ Our aim is to game out our response to potential incidents in advance, principle
 window in real-life situations. Our runbooks alongside [gamedays](gamedays.md) aim to predict failure scenarios and plan 
 for them.
 
-
-
-

@@ -52,15 +52,59 @@ master environments are therefore treated as a direct representation of what is 
 
 ## Data Protection Impact Assessment
 
+If a new provider is being on-boarded or new classifications of data are being stored with that provider that has not
+been through the DPIA process, a DPIA form has to be completed and reviewed / approved by the compliance team before the
+new application or service enters production and takes data.
 
 ## Documentation
 
+### Architectural
+As part of any project it is imperative to document the architectural assumptions that were made as part of a readme.
+This allows for engineers to pick up a project and gain a quick understanding of the bussiness and technology requirements
+that have lead to architectural decisions to be made.
+
+### API
+When deploying an API we should provide full API documentation that is hosted alongside the API, this provides engineers
+with a clear integration guide.
+
+### Code
+We should document code when it is not obvious as to the function of code. This is a dark art, so the default should be
+if in doubt, add a comment. However clear function naming and abstractions, should remove the need for over documentation.
 
 ## Failover
+For all applications, it is important to consider an application and all of it's components and how these may fail in
+a production setting. We usually start the process of considering our failover strategy by building [runbooks](runbooks.md).
 
+### Backend's
+Serverless technologies by their very nature are usually highly fault, with applications 
+sitting at the regional level. This means that they usually distributed across 3 availability zones and therefore
+across 9 data centres at minimum
+
+Dependant on the need for robustness of the application, we will also deploy to a backup region with a traffic routing 
+policy. The traffic routing policy will analyse all dependencies of the application via a status endpoint, on failure
+the status will return a failure and the route will divert to the failover region.
+
+### Frontend's
+All frontend's are hosted in S3 and via Cloudfront. As cloudfront is a globally hosted service spanning many data centres
+we have very few worries in this area.
+
+### Databases
+Production databases should always be deployed with with a multi availability zone master, to provide redundancy in case
+of issue with an availability zone. Read replicas should also always be in place, to ensure that large queries cannot
+take down data ingress into the write database.
+
+In certain applications such as live income reporting, we also deploy cross regions, however this is always based on a
+risk vs reward basis.
 
 ## Infrastructure as Code
+For all applications and services, architecture is defined by the configuration and code. There primary reasons to
+to do this are as follows,
 
+- All stages of the application match production, this ensures that any test results will match what we see in a 
+production setting.
+- We have a clear audit trail of changes made to architecture via VCS
+- All changes to architecture go through the [code review](pull-requests.md) process.
+- Individual knowledge of architecture is shared within the engineering team.
 
 ## Pipelines & Automated Testing
 By undertaking continuous delivery it is imperative that we employ as much automated testing as possible to ensure code 

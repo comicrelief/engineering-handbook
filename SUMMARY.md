@@ -28,14 +28,12 @@
   * [Domain Management](backend/domain-management.md)
   * Shared Libraries
       * [Lambda Wrapper](backend/lambda-wrapper.md)
-
 * [Frontend](frontend/overview.md)
   * [Accessibility](frontend/accessibility.md)
   * [Coding Standards](frontend/coding-standards.md)
   * Shared Libraries
       * [Pattern Lab](frontend/pattern-lab.md)
       * [React Storybook](frontend/storybook.md)
-
 * [QA](qa/manualQA.md)
 
 ## Team
