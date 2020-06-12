@@ -15,8 +15,12 @@ org to the individuals.
 
 ## External User Access Policy
 ***
+AWS Cognito is our primary authentication provider for members of the public, as a default we should be implementing a
+strong password policy and enforced two factor authentication for all users. This has the benefit of being automatically
+scanned as part of our security review and is implemented using best in class technology from the world's leading hosting
+provider.
 
-
+Under no situation should we ever have the need to roll our own cryptography or authorization mechanisms.
 
 ## Internal User Access Policy
 ***

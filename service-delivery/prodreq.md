@@ -105,7 +105,7 @@ risk vs reward basis.
 ## Infrastructure as Code
 ***
 
-For all applications and services, architecture is defined by the configuration and code. There primary reasons to
+For all applications and services, architecture is defined by configuration and code. The primary reasons to
 to do this are as follows,
 
 - All stages of the application match production, this ensures that any test results will match what we see in a 

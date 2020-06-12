@@ -11,6 +11,3 @@ All of our pipelines are within Concourse CI. All pipelines are managed within i
 
 ## Relevant Articles
 - [Pipelines Everywhere](https://medium.com/comic-relief/pipelines-everywhere-9eb284f5bee3)
-
-
-
