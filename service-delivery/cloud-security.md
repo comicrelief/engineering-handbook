@@ -13,6 +13,8 @@ With reduced need for infrastructure based protections, our Security is effectiv
 configuration management.
 
 ## Key Security Considerations
+***
+
 Our key security considerations and practices can be found below.
 
 - [Authentication of users](#authentication-of-users)

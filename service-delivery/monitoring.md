@@ -1,7 +1,12 @@
 # Monitoring & Error Reporting
 ***
 
+* [Providers](#providers)
+* [Further Reading](#further-reading)
+
 ## Providers
+***
+
 We use a mixture of tools to provide a clear overview of what is happening at every stage and point within our systems.
 
 - [AWS Cloudwatch](#aws-cloudwatch)
@@ -66,4 +71,6 @@ endpoints go down or if SSL certificates are expiring.
 All alerts from Wormly go to a range of slack channels alongside sending out email alerts.
 
 ## Further Reading
+***
+
 - [Monitoring & Debugging Serverless Applications for Red Nose Day 2019](https://medium.com/comic-relief/monitoring-debugging-serverless-applications-for-red-nose-day-2019-b2e3dd43613b)

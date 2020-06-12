@@ -10,6 +10,8 @@ that could occur from high traffic events.
 - [Further Reading](#further-reading)
 
 ## Approach
+***
+
 We will generally run the three following types of tests against our applications to ensure they hold up to the levels 
 of load that we would expect during campaign.
 
@@ -28,12 +30,16 @@ television and other similar events.
 the campaign period.
 
 ## Tooling
+***
+
 We use Serverless Artillery to load test all of our applications, which uses Lambda to generate traffic against our 
 backend APIs.
 
 We also use InfluxDB and Grafana to report on these load tests.
 
 ## Methodology
+***
+
 We will always create load testing plans that recreate actual traffic patterns. We will generally load test very far
 over our expected load levels to ensure that we do no have any surprises down the line.
 
@@ -43,5 +49,7 @@ We will then create a report as a release in the load testing repository to docu
 back to it in the future.
 
 ## Further Reading
+***
+
 - [Load testing serverless with serverless at Comic Relief](https://medium.com/comic-relief/load-testing-serverless-with-serverless-at-comic-relief-cb6b9fa026ee)
 - [Serverless Artillery workshop](https://github.com/Nordstrom/serverless-artillery-workshop)

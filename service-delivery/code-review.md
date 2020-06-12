@@ -7,6 +7,8 @@ A pull request is the main and only way that code should reach a production envi
 - [Automated Tests](#automated-tests--tasks)
 
 ## Developer Process
+***
+
 A developer contributing code will take the following steps before it is merged into the master branch,
 
 1. The developer will create a branch from the master branch on their local machine
@@ -27,6 +29,8 @@ It should be noted that if the project is a shared node library, this will also 
 docker image it will trigger a release to docker hub.
 
 ## Automated Tests & Tasks
+***
+
 We run automated tests against all PRs to ensure that they will not cause issues when merged into production. These 
 generally consist of a mixture of the following types of tests,
 
@@ -37,5 +41,6 @@ generally consist of a mixture of the following types of tests,
 - Lighthouse testing
 - Third party dependency testing
 - Preview environment deployment
+- Static Code Analysis
 
 Please see the [tooling section](tooling.md) for more information on the tools that we use to test our code.

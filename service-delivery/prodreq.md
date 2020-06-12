@@ -20,6 +20,7 @@ Our aim is to continuously deliver all products and services that we are creatin
 * [Penetration testing](#penetration-testing)
 
 ## Architectural Review
+***
 
 When approaching a system that utilises cloud technologies that we do not currently have in our stack or is 
 different to anything that we have in our stack. We should look to our cloud partners to provide architectural review at
@@ -42,6 +43,7 @@ See the [third party validation](third-party-validation.md) documentation for mo
 architectural review.
 
 ## Code Review
+***
 
 As part of how we undertake [pull requests](code-review.md) and how we deploy all our code via 
 [pipelines](pipelines.md), code review is essential to ensure that the code, configuration & infrastructure being
@@ -51,12 +53,14 @@ On all repositories we block deployments to the master environment and require r
 master environments are therefore treated as a direct representation of what is in production.
 
 ## Data Protection Impact Assessment
+***
 
 If a new provider is being on-boarded or new classifications of data are being stored with that provider that has not
 been through the DPIA process, a DPIA form has to be completed and reviewed / approved by the compliance team before the
 new application or service enters production and takes data.
 
 ## Documentation
+***
 
 ### Architectural
 As part of any project it is imperative to document the architectural assumptions that were made as part of a readme.
@@ -72,6 +76,8 @@ We should document code when it is not obvious as to the function of code. This 
 if in doubt, add a comment. However clear function naming and abstractions, should remove the need for over documentation.
 
 ## Failover
+***
+
 For all applications, it is important to consider an application and all of it's components and how these may fail in
 a production setting. We usually start the process of considering our failover strategy by building [runbooks](runbooks.md).
 
@@ -97,6 +103,8 @@ In certain applications such as live income reporting, we also deploy cross regi
 risk vs reward basis.
 
 ## Infrastructure as Code
+***
+
 For all applications and services, architecture is defined by the configuration and code. There primary reasons to
 to do this are as follows,
 
@@ -107,6 +115,8 @@ production setting.
 - Individual knowledge of architecture is shared within the engineering team.
 
 ## Pipelines & Automated Testing
+***
+
 By undertaking continuous delivery it is imperative that we employ as much automated testing as possible to ensure code 
 competence.
 
@@ -123,11 +133,13 @@ action.
 See our documentation on [pipelines and automated testing](pipelines.md) for more information.
 
 ## Manual QA
+***
 
 See the [manual QA](../qa/manualQA.md) section for details on the QA that should be conducted on all pieces of an
 application or service before reaching production.
 
 ## Monitoring & Alerting
+***
 
 When taking a product or service to production, we should ensure that we are sending any and all errors from the 
 environment to our error logging platforms, this allows us to quantify all issues and allows us to fully utilise
@@ -139,6 +151,8 @@ ensure the correct operation of these systems.
 See the [monitoring and alerting](monitoring.md) section for information on the monitoring & alerting tools that we employ.
 
 ## Penetration testing
+***
+
 It is vitaly important for us to undertake penetration testing in the event of the creation or significant change to any 
 new system or application that will contain or transit customer or sensitive information.
 
