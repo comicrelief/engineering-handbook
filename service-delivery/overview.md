@@ -11,6 +11,7 @@ create, the better.
 ## Sections
 - [Application & Cloud Security](cloud-security.md)
 - [Authorization Policy](authorization-policy.md)
+- [Code Review](code-review.md)
 - [Coding in the Open](code-in-open.md)
 - [Coding Standards](coding-standards.md)
 - [Gamedays](gamedays.md)
@@ -21,7 +22,6 @@ create, the better.
 - [Load Testing](load-testing.md)
 - [Monitoring & Error Reporting](monitoring.md)
 - [Pipelines](pipelines.md)
-- [Pull Requests](pull-requests.md)
 - [Runbooks](runbooks.md)
 - [Production System Requirements](../service-delivery/prodreq.md)
 - [Third Party Validation](../service-delivery/third-party-validation.md)

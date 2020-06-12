@@ -43,7 +43,7 @@ architectural review.
 
 ## Code Review
 
-As part of how we undertake [pull requests](pull-requests.md) and how we deploy all our code via 
+As part of how we undertake [pull requests](code-review.md) and how we deploy all our code via 
 [pipelines](pipelines.md), code review is essential to ensure that the code, configuration & infrastructure being
 deployed are secure and fit for purpose. We do this by having at least one member of the team review the code.
 
@@ -103,7 +103,7 @@ to do this are as follows,
 - All stages of the application match production, this ensures that any test results will match what we see in a 
 production setting.
 - We have a clear audit trail of changes made to architecture via VCS
-- All changes to architecture go through the [code review](pull-requests.md) process.
+- All changes to architecture go through the [code review](code-review.md) process.
 - Individual knowledge of architecture is shared within the engineering team.
 
 ## Pipelines & Automated Testing

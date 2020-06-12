@@ -83,7 +83,7 @@ For how we penetration test and seek external validation of architectural deciss
 
 ### Static Analysis
 
-Static analysis of all code is performed as part of a [pull request](pull-requests.md). This ensures
+Static analysis of all code is performed as part of a [pull request](code-review.md). This ensures
 that many potential code flaws can be detected early, before introduction into the production environment.
 
 ### Obsolete Application & Service Removal
