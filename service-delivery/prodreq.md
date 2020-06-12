@@ -9,6 +9,7 @@ responsible for the security & operation of our products and services.
 Our aim is to continuously deliver all products and services that we are creating and maintaining.
 
 * [Architectural Review](#architectural-review)
+* [Automated Backups](#automated-backups)
 * [Code Review](#code-review)
 * [Data Protection Impact Assessment](#data-protection-impact-assessment)
 * [Documentation](#documentation)
@@ -41,6 +42,14 @@ architecture and discuss assumptions. The review covers the following areas,
 
 See the [third party validation](third-party-validation.md) documentation for more information on how we approach 
 architectural review.
+
+## Automated Backups
+***
+
+If the application is the final store of data, then it should have automated backups in place that run on a minimum of a
+daily basis. This should ideally be into another cloud region to provide redundancy on the backup.
+
+The backup strategy for the application should be documented as part of the repository documentation.
 
 ## Code Review
 ***
