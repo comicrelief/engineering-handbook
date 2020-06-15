@@ -8,7 +8,7 @@ org to the individuals.
 
 * [External User Access Policy](#external-user-access-policy)
 * [Internal User Access Policy](#internal-user-access-policy)
-    * [SSO](#sso)
+    * [SSO](#single-sign-on-sso)
     * [Rules of the Road](#rules-of-the-road)
     * [Administrative Permissions](#administrative-permissions)
 * [Service Authorization Controls](#service-authorization-controls)

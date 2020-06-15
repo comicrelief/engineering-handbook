@@ -68,7 +68,7 @@
 - **SR** – Sport Relief.
 
 - **SSO** – Single Sign-On. See
-  [Authorization Policy](../service-delivery/authorization-policy.md#sso).
+  [Authorization Policy](../service-delivery/authorization-policy.md#single-sign-on-sso).
 
 - **SSV** – Single Supporter View, our supporter data warehouse.
 
