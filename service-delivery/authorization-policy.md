@@ -14,16 +14,16 @@ org to the individuals.
 * [Service Authorization Controls](#service-authorization-controls)
 
 ## External User Access Policy
-***
-AWS Cognito is our primary authentication provider for members of the public, as a default we should be implementing a
+
+[AWS Cognito](https://aws.amazon.com/cognito/) is our primary authentication
+provider for members of the public. As a default we should be implementing a
 strong password policy and enforced two factor authentication for all users. This has the benefit of being automatically
-scanned as part of our security review and is implemented using best in class technology from the world's leading hosting
+scanned as part of our security review and is implemented using best-in-class technology from the world's leading hosting
 provider.
 
 Under no situation should we ever have the need to roll our own cryptography or authorization mechanisms.
 
 ## Internal User Access Policy
-***
 
 Centralized access management is key to ensuring that the correct team-members have access to the correct data and 
 systems and at the correct level. 
@@ -36,24 +36,31 @@ considered necessary only when a user cannot perform a function without that acc
 without the requested access, it's not considered necessary. Least privilege is important because it protects us and our
 customers from unauthorized access and configuration changes and in the event of an account compromise by limiting access.
 
-### SSO
+### Single Sign-On (SSO)
+
 When provisioning or using a service for internal users, the first port of call should be to use SSO. We use three SSO
 providers depending on the use case.
 
 #### AWS SSO
-This is used to access any of our cloud accounts and related monitoring tooling. Users are able to create short lived
-access tokens using SSO to interact with AWS.
+
+This is used to access any of our cloud accounts and related monitoring tooling.
+Users are able to create short-lived access tokens for interacting with AWS
+services.
 
 #### Comic Relief SSO (Azure AD)
+
 This is used when accessing internal staff facing systems and is the easiest way for non-engineering members of staff to
 access systems.
 
-#### Github SSO
-This is used for members of the Digital & Innovation team to access development & build tooling including CI/CD systems.
+#### GitHub SSO
+
+This is used for members of the Digital & Innovation team to access development
+and build tooling including CI/CD systems.
 
 ### Rules of the Road
-As a team we have the following requirements that reduce security risks, these should be implemented in addition to the 
-Comic Relief IT policy.
+
+As a team we have the following requirements that reduce security risks. These
+should be implemented in addition to the Comic Relief IT policy.
 
 #### 1. Use a password manager
 
@@ -77,33 +84,40 @@ Unless there is no other option, then do not share your passwords or account wit
 
 #### 5. Use unique and strong passwords
 
-Use your password manager to generate a random unique password with a minimum of 12 characters for each service you use
+Use your password manager to generate a unique random password, with a minimum
+of 12 characters, for each service you use.
 
 ### Administrative permissions
+
 Administrative permissions should be considered operational in nature. This means that they are granted for the sole 
 purpose of system management, configuration, and support. They should be recognized as privileged accounts and as such, 
 activities must be logged and the logs protected and regularly reviewed.
 
 ## Service Authorization Controls
-***
 
-When considering the implementation of any service and it's communication with other resources and services within our
+When considering the implementation of any service and its communication with other resources and services within our
 domain, blast radius reduction should be of primary concern.
 
-The following authorization controls should be maintained and implemented for all service implementations & 
-communication.
+The following authorization controls should be maintained and implemented for
+all service implementations and communication:
 
-- All applications should have their own deployment keys and these should be cycled on a 3 month basis.
+- All applications should have their own deployment keys, and these should be
+  cycled on a 3 month basis.
 
 - All applications should only have access to the cloud resources that they need.
 
-- Resources should not be shared between staging and production.
+- Resources should not be shared between staging and production environments.
 
-- Communication between services should be via https or message queue and should be restricted by a unique api key for
-that service. In the event of a breach, this reduces blast area and allows us to track down the source much faster.
+- Communication between services should be via HTTPS or message queues, and
+  should be restricted by a unique API key for that service. In the event of a
+  breach, this reduces blast area and allows us to track down the source much
+  faster.
 
-- Data should always be encrypted at rest and in transit, the preference here is to use native AWS encryption via KMS.
+- Data should always be encrypted at rest and in transit. The preference here
+  is to use native AWS encryption via KMS.
 
-- Applications should be restricted by type to cloud account, an example of this would be data infrastructure not
-sitting within the same cloud account as public facing API infrastructure and only sending data to the data 
-infrastructure using a key with no read permissions. This helps to reduce the blast radius of an infrastructure breach.
+- Applications should be restricted by type to a dedicated cloud account for
+  that type. An example of this would be data infrastructure not sitting within
+  the same cloud account as public-facing API infrastructure, and only sending
+  data to the data infrastructure using a key with no read permissions. This
+  helps to reduce the blast radius of an infrastructure breach.

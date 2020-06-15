@@ -2,7 +2,7 @@
 ***
 
 It is important that we are overly transparent around any and all incidents that happen within our domain. By doing this 
-we gain both the organisations and our supporters trust.
+we gain the trust of both the organisation and our supporters.
 
 Effective incident management is key to limiting the disruption caused by an incident and restoring normal business 
 operations as quickly as possible.
@@ -15,6 +15,7 @@ operations as quickly as possible.
 * [Incident Documentation](#incident-documentation)
 
 ## Declaration of an Incident
+
 It is better to declare an incident early and then find a simple fix and close out the incident than to have to spin up 
 the incident management framework hours into a burgeoning problem.
 
@@ -38,22 +39,26 @@ assigning responsibilities according to need and priority. The commander holds a
 not delegated. If appropriate, they can remove roadblocks that prevent the incident team from working most effectively.
 
 ### Operations Lead
-The Operations lead works with the incident commander to respond to the incident by applying operational tools to the 
+
+The operations lead works with the incident commander to respond to the incident by applying operational tools to the 
 task at hand. The operations team should be the only group modifying the system during an incident.
 
 ## Incident Documentation
 
 ### Status Page
+
 As part of documenting and communicating an incident, we should update the [status page](https://status.comicrelief.com)
 as an incident progresses.
 
 ### Live Documentation
+
 The incident commander’s most important responsibility during an incident is to keep a living incident document which
 should ideally be editable by several people concurrently.
 
-This living documentation can be messy, but must be functional as should be retained for postmortem analysis.
+This living documentation can be messy, but must be functional as it should be retained for post mortem analysis.
 
 ### Post Mortem
+
 Within 5 days of the incident, a post mortem meeting should be held. This meeting should provide a root cause analysis
 and timeline of the event. 
 

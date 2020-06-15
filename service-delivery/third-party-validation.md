@@ -10,7 +10,7 @@ industry leaders to conduct testing against,
 - Products and operations
 - Vendor products
 
-These reviews can, but are not limited to the following testing,
+These reviews can include, but are not limited to, the following action points.
 
 - Conduct vulnerability research against all assets.
 - Research FOSS tools that are integrated within Comic Relief applications.
@@ -18,18 +18,20 @@ These reviews can, but are not limited to the following testing,
 - Automated scanning of architecture
 - Network and user penetration
 
-For systems built (or significantly modified) which contain customer and/or sensitive data, we should
-undertake application security reviews with a third party specialist to ensure the system is hardened in case of
-attack.
+For systems built (or significantly modified) that contain customer and/or
+sensitive data, we should undertake application security reviews with a third
+party specialist to ensure the system is hardened against attack.
 
 ## Providers
 
 ### AWS
+
 When provisioning a new service or application we will generally always engage an AWS solution architect to validate the
 ideas being implemented within our systems and ensure that we are aligning ourselves with industry best practices.
 
-When taking applications into production we will conduct a well architected review alongside AWS to ensure that we are
-and have built the application inline with the best possible standards, these reviews cover the following areas,
+When taking applications into production, we will conduct a well architected
+review alongside AWS to ensure that we have built the application inline with
+the best possible standards. These reviews cover the following areas:
 
 - Operational Excellence
 - Security
@@ -39,15 +41,20 @@ and have built the application inline with the best possible standards, these re
 
 ### NCC
 
-NCC conduct yearly penetration testing on all of our core applications to ensure we are in line with current security
+[NCC](https://www.nccgroup.com/) conduct yearly penetration testing on all of
+our core applications to ensure we are in line with current security
 recommendations.
 
 ### RSM
 
-RSM have conducted audits against application logic and bossiness worthiness of our internal systems and software 
-development practices. This has included bringing on board technology specialists to gain an understanding and advise
-on systems processes and architecture.
+[RSM](https://www.rsmuk.com/) have conducted audits against application logic
+and business-worthiness of our internal systems and software development
+practices. This has included bringing onboard technology specialists to gain an
+understanding and advise on systems processes and architecture.
 
 ### Sage
 
-Sage's internal security team provide penetration testing and CIS benchmarking of our cloud architecture.
+[Sage](https://www.sage.com/en-gb/)'s internal security team provide
+penetration testing and
+[CIS benchmarking](https://www.cisecurity.org/cis-benchmarks/)
+of our cloud architecture.

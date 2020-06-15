@@ -1,7 +1,7 @@
 # Coding Standards
 ***
 
-The aim for our frontend coding standards is to achieve the following goals,
+The aim for our frontend coding standards is to achieve the following goals:
 
 * simple, clean, readable
 * modular / component approach - always consider reusability and portability
@@ -29,29 +29,33 @@ The aim for our frontend coding standards is to achieve the following goals,
     * matches design across breakpoint
     * pass Level1 browsers & devices
     
-See our [production requirements](../service-delivery/prodreq.md) for more in depth information on the tooling and approaches that 
+See our [production requirements](../service-delivery/prodreq.md) for more
+in-depth information on the tooling and approaches that 
 should be undertaken before an application enters production. 
 
 ## Tooling
 
 We use the following tooling to ensure coding standards across our frontend projects,
 
-#### Code quality 
+### Code quality 
+
 * [ESlint](http://www.eslint.org/)
 * [CSSlint](http://csslint.net/)
 * [SCSSlint](https://github.com/brigade/scss-lint)
 
-#### Testing
+### Testing
+
 * [Jest](https://jestjs.io/)
 * [Mocha](https://mochajs.org/)
 * [Cypress](https://www.cypress.io/)
 
-#### Performance
+### Performance
+
 * [Google page speed insight](https://developers.google.com/speed/pagespeed/)
-* [Lighthouse](https://github.com/GoogleChrome/lighthouse)
+* [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
 * [Phantomas](https://github.com/macbre/phantomas)
 
-## Resource and further reading
+## Resources and further reading
 
 * [JavaScript automated testing with Jasmine, Karma and Travis](https://medium.com/@koalamango/javascript-automated-testing-with-jasmine-karma-and-travis-c118a98223d9#.fb7rrqas4)
 * [Measure, Optimise & Automate Frontend Performance](https://medium.com/@koalamango/measure-optimise-automate-frontend-performance-d55552fccdfe#.suoyd4u91)

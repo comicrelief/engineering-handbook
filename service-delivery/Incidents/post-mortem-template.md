@@ -6,21 +6,26 @@
 **Attendees:** Who was present at the meeting
 
 ## Overview
+
 Include a short sentence or two summarising the contributing factors, timeline summary, and the impact. E.g. "On the morning of August 99th, we suffered a 1 minute SEV-1 due to a runaway process on our primary database machine. This slowness caused roughly 0.024% of alerts that had begun during this time to be delivered out of SLA."
 
 ## What Happened
+
 Include a short description of what happened.
 
 ## Contributing Factors
+
 Include a description of any conditions that contributed to the issue. If there were any actions taken that exacerbated the issue, also include them here with the intention of learning from any mistakes made during the resolution process.
 
 ## Resolution
+
 Include a description what solved the problem. If there was a temporary fix in place, describe that along with the long-term solution.
 
 ## Impact
+
 Be very specific here, include exact numbers.
 
-| Impact                             | Statistic                                                |
+| Impact                             | Statistic                                            |
 |------------------------------------|------------------------------------------------------|
 | Time in SEV-1                      | ?mins                                                |
 | Time in SEV-2                      | ?mins                                                |
@@ -31,6 +36,7 @@ Be very specific here, include exact numbers.
 | Support Requests Raised            | ?? Include any relevant links to tickets             |
 
 ## Responders
+
 Who was involved, this should be generalized and the actual person involved should not be able to be discerned from it?
 
 ## Timeline
@@ -53,7 +59,7 @@ Some important times to include: (1) time the contributing factor began, (2) tim
 
 ## Action Items
 
-Each action item should be in the form of a github ticket, and each ticket should have the same set of two tags: “sev1_YYYYMMDD” (such as sev1_20150911) and simply “sev1”. Include action items such as: (1) any fixes required to prevent the contributing factor in the future, (2) any preparedness tasks that could help mitigate the problem if it came up again, (3) remaining post-mortem steps, such as the internal email, as well as the status-page public post, (4) any improvements to our incident response process.
+Each action item should be in the form of a GitHub ticket, and each ticket should have the same set of two tags: “sev1_YYYYMMDD” (such as sev1_20150911) and simply “sev1”. Include action items such as: (1) any fixes required to prevent the contributing factor in the future, (2) any preparedness tasks that could help mitigate the problem if it came up again, (3) remaining post-mortem steps, such as the internal email, as well as the status-page public post, (4) any improvements to our incident response process.
 
 ## Messaging
 
