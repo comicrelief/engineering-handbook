@@ -70,7 +70,7 @@ We use [Statusfy](https://statusfy.co/) to report on all errors and to provide
 summaries of all issues that have happened within our systems.
 It is the first port of call for issue and error updates for our stakeholders.
 
-We will generally create an error report within our status page when an issue happens and update the issue as problems are 
+We will generally create an error report within our status page when an issue happens and update the issue as problems are
 resolved.
 
 Updates to incidents are automatically reported to Slack.

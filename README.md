@@ -12,7 +12,7 @@ We have put together this handbook collaboratively and in the open, much like we
 Within the engineering team we operate in a NoOps environment: we focus on the
 use of cloud servies and automation. Software and software-defined hardware are
 provisioned dynamically, setting our talent free to help drive business outcomes. Using
-cloud-native resources, we greatly reduce Dev and Ops complexity as there are less owned by the technical teams, 
+cloud-native resources, we greatly reduce Dev and Ops complexity as there are less owned by the technical teams,
 resources are consumed as a service and not self-managed.
 
 We continuously strive to apply the following engineering principles in the way we develop our services and digital products.
@@ -54,7 +54,7 @@ And then you can serve this locally using
 
 	yarn start
 
-And check out the handbook at 
+And check out the handbook at
 
 	http://localhost:4000
 

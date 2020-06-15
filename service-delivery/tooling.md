@@ -1,7 +1,7 @@
 # Tooling
 ***
 
-At Comic Relief, we have a long history of continuous integration and have been using tools such as Jenkins, Travis, 
+At Comic Relief, we have a long history of continuous integration and have been using tools such as Jenkins, Travis,
 Circle CI, Netlify and Concourse CI. Over the last couple of years, we have settled on the following tools:
 
 - [API Documentation](#api-documentation)
@@ -43,7 +43,7 @@ We use the following tooling to automatically and manually test code.
   and **Behat** to test against a wide range of browsers and devices.
 
 - **[Cypress](https://www.cypress.io/)** is used to run headless Chrome-based
-  end-to-end tests on frontend repositories. 
+  end-to-end tests on frontend repositories.
 
 - **[Jest](https://jestjs.io/)** is used to take snapshots of visual components
   and to run unit tests.

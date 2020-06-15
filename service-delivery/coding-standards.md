@@ -11,9 +11,9 @@ The benefits of this include:
 - Easy to maintain
 
 We aim to write code that can be easily understood and that is consistent across all commits and projects.
-Ensuring consistency has a positive impact on the quality of the project, and one should ensure that it is maintained 
-while coding. Also, it should be taken care that the guidelines are homogeneously followed across different levels of 
-the system and do not contradict each other. The finished codebase should look like it has been written by 
+Ensuring consistency has a positive impact on the quality of the project, and one should ensure that it is maintained
+while coding. Also, it should be taken care that the guidelines are homogeneously followed across different levels of
+the system and do not contradict each other. The finished codebase should look like it has been written by
 a single developer, in a single session.
 
 We automate coding standards wherever possible to ensure the least hassle for

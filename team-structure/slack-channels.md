@@ -9,13 +9,13 @@ contain both the cross-functional team and error logging for that application.
 
 ## Alerts
 
-- **#engineering-dangerzone-alerts** - Automated engineering alerts that by their very nature should be treated as very 
+- **#engineering-dangerzone-alerts** - Automated engineering alerts that by their very nature should be treated as very
   critical.
 - **#data-systems-alerts** - Alerts and errors raised by the data systems
 - **#digital-sms-notifications** - Alerts and errors raised by the giftaid reminder service
 - **#giftaid-alerts (private)** - Alerts and errors raised by the giftaid service
 - **#snyk-reports** - Dependency issues raise by Snyk
-- **#webops_alerts (private)** - A catch all channel that catches any errors not reported into application specific 
+- **#webops_alerts (private)** - A catch all channel that catches any errors not reported into application specific
   channels.
 
 ## Engineering
@@ -63,5 +63,5 @@ contain both the cross-functional team and error logging for that application.
 ## Providers
 
 - **#epsagon-cr** - Shared channel with Epsagon to discuss and raise issues with monitoring tooling.
-- **#pentesting-sage** - Shared channel with Sage offensive security team to discuss any pentesting that they have 
+- **#pentesting-sage** - Shared channel with Sage offensive security team to discuss any pentesting that they have
   conducted.

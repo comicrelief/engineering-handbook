@@ -1,8 +1,8 @@
 # Coding Standards
 ***
 
-This page outlines the tooling and standards that we align ourselves to when writing backend applications. Our aim is to 
-produce clean and maintainable code. If our code lacks consistency, is poorly laid out and undocumented, we are 
+This page outlines the tooling and standards that we align ourselves to when writing backend applications. Our aim is to
+produce clean and maintainable code. If our code lacks consistency, is poorly laid out and undocumented, we are
 adding to the overall complexity of our system.
 
 ## NodeJS Projects
@@ -15,7 +15,7 @@ We use the following ESLint plugins together.
 - [SonarJS rules](https://www.npmjs.com/package/eslint-plugin-sonarjs) to detect bugs and suspicious patterns in your code.
 - [Unicorn Rules](https://www.npmjs.com/package/eslint-plugin-unicorn)
 
-Rule exceptions should not be made in projects unless absolutely necessary, with an active effort to remove exceptions to 
+Rule exceptions should not be made in projects unless absolutely necessary, with an active effort to remove exceptions to
 rules wherever possible.
 
 ## PHP Projects

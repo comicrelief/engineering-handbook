@@ -28,16 +28,16 @@ The aim for our frontend coding standards is to achieve the following goals:
     * matches story acceptance criteria
     * matches design across breakpoint
     * pass Level1 browsers & devices
-    
+
 See our [production requirements](../service-delivery/prodreq.md) for more
-in-depth information on the tooling and approaches that 
-should be undertaken before an application enters production. 
+in-depth information on the tooling and approaches that
+should be undertaken before an application enters production.
 
 ## Tooling
 
 We use the following tooling to ensure coding standards across our frontend projects,
 
-### Code quality 
+### Code quality
 
 * [ESlint](http://www.eslint.org/)
 * [CSSlint](http://csslint.net/)

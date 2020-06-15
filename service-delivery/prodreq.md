@@ -2,7 +2,7 @@
 ***
 
 The production requirements outline the basic tooling setup, creation of a build pipeline, and how we work our way all
-the way up to production deployment and day-to-day operation. Everyone involved in the software development lifecycle is 
+the way up to production deployment and day-to-day operation. Everyone involved in the software development lifecycle is
 responsible for the security and operation of our products and services.
 
 Our aim is to continuously deliver all products and services that we are creating and maintaining.
@@ -23,13 +23,13 @@ Our aim is to continuously deliver all products and services that we are creatin
 
 When approaching a system that utilises cloud technologies that we do not currently have in our stack, or that are
 different to anything that we have in our stack, we should look to our cloud partners to provide architectural review at
-both the scoping of the project and productionisation of a system. 
+both the scoping of the project and productionisation of a system.
 
 By engaging cloud partners at the start of a project,
 we can ensure that our approach is sound and we are taking the best route to achieve what we want. Our cloud partners
-generally have a wide range of experience from different organisations and can be invaluable at this stage. 
+generally have a wide range of experience from different organisations and can be invaluable at this stage.
 
-By engaging cloud partners prior to taking a project into production, we can run through every section of the 
+By engaging cloud partners prior to taking a project into production, we can run through every section of the
 architecture and discuss assumptions. The review covers the following areas:
 
 - Operational Excellence
@@ -38,7 +38,7 @@ architecture and discuss assumptions. The review covers the following areas:
 - Performance Efficiency
 - Cost Optimization
 
-See the [third party validation](third-party-validation.md) documentation for more information on how we approach 
+See the [third party validation](third-party-validation.md) documentation for more information on how we approach
 architectural review.
 
 ## Automated Backups
@@ -50,7 +50,7 @@ The backup strategy for the application should be documented as part of the repo
 
 ## Code Review
 
-As part of how we undertake [pull requests](code-review.md) and how we deploy all our code via 
+As part of how we undertake [pull requests](code-review.md) and how we deploy all our code via
 [pipelines](pipelines.md), code review is essential to ensure that the code, configuration and infrastructure being
 deployed are secure and fit for purpose. We do this by having at least one member of the team review the code.
 
@@ -89,11 +89,11 @@ a production setting. We usually start the process of considering our failover s
 
 ### Backends
 
-Serverless technologies by their very nature are usually highly fault-tolerant, with applications 
+Serverless technologies by their very nature are usually highly fault-tolerant, with applications
 sitting at the regional level. This means that they usually distributed across 3 availability zones and therefore
 across 9 data centres at minimum.
 
-Dependent on the need for robustness of the application, we will also deploy to a backup region with a traffic routing 
+Dependent on the need for robustness of the application, we will also deploy to a backup region with a traffic routing
 policy. The traffic routing policy will analyse all dependencies of the application via a status endpoint, and on failure
 the routing policy will divert traffic to the failover region.
 
@@ -124,10 +124,10 @@ to do this are as follows,
 
 ## Pipelines & Automated Testing
 
-By undertaking continuous delivery it is imperative that we employ as much automated testing as possible to ensure code 
+By undertaking continuous delivery it is imperative that we employ as much automated testing as possible to ensure code
 competence.
 
-As part of taking any application to production, it should have a pipeline. Within that pipeline we should have at 
+As part of taking any application to production, it should have a pipeline. Within that pipeline we should have at
 minimum a staging environment and end-to-end tests running against staging before deploying to production.
 
 If the application is a frontend application, we should also have
@@ -147,19 +147,19 @@ application or service before reaching production.
 
 ## Monitoring & Alerting
 
-When taking a product or service to production, we should ensure that we are sending any and all errors from the 
+When taking a product or service to production, we should ensure that we are sending any and all errors from the
 environment to our error logging platforms. This allows us to quantify all issues and allows us to fully utilise
 our distributed tracing.
 
-We should also be setting up any foreseeable alerting on all resources and services utilised by the application, to 
-ensure the correct operation of these systems. 
+We should also be setting up any foreseeable alerting on all resources and services utilised by the application, to
+ensure the correct operation of these systems.
 
 See the [monitoring and alerting](monitoring.md) section for information on the monitoring and alerting tools that we employ.
 
 ## Penetration testing
 
-It is vitally important for us to undertake penetration testing in the event of the creation or significant change to any 
+It is vitally important for us to undertake penetration testing in the event of the creation or significant change to any
 new system or application that will contain or transit customer or sensitive information.
 
-See the [third party validation](third-party-validation.md) documentation for information on how we approach 
+See the [third party validation](third-party-validation.md) documentation for information on how we approach
 penetration testing.

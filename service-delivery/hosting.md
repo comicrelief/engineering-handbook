@@ -89,10 +89,10 @@ all of our React frontend applications.
 
 [Pivotal Web Services](https://run.pivotal.io/) is the hosting platform for our
 legacy PHP applications. Currently the only applications that
-are still running on it are the legacy payment service layer and payin. Our aim is to retire these by the end of 2019, 
+are still running on it are the legacy payment service layer and payin. Our aim is to retire these by the end of 2019,
 with the view of those being the last applications that will sit on PWS.
 
-Deployments to PWS follow the same path as all other pull request environments and are triggered by pushes to 
+Deployments to PWS follow the same path as all other pull request environments and are triggered by pushes to
 GitHub.
 
 

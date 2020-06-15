@@ -1,12 +1,12 @@
 # Application & Cloud Security
 ***
 
-By adopting NoOps, we shift many of the traditional concerns towards our cloud providers and extend what the 
+By adopting NoOps, we shift many of the traditional concerns towards our cloud providers and extend what the
 infrastructure provides, shifting the traditional view of the shared security model.
 
 In serverless computing, the management and allocation of resources – such as uptime, server maintenance, patching, backup
-and security – are all managed by cloud providers instead of systems administrators and IT operations staff. Further to 
-this, the execution environment is in an ephemeral container with a read-only file system and highly restrictive 
+and security – are all managed by cloud providers instead of systems administrators and IT operations staff. Further to
+this, the execution environment is in an ephemeral container with a read-only file system and highly restrictive
 permissions. Controls like these provide a great level of inherent security.
 
 With reduced need for infrastructure-based protections, our security efforts become more focussed
@@ -23,7 +23,7 @@ Our key security considerations and practices can be found below.
 - [Data leak prevention](#data-leak-prevention)
 - [Static Analysis](#static-analysis)
 - [Obsolete Application & Service Removal](#obsolete-application--service-removal)
-- [End to end Observability](#end-to-end-observability)
+- [End-to-End Observability](#end-to-end-observability)
 - [Incidents](#incidents)
 - [Alignment with Best Practices](#alignment-with-best-practices)
 - [Security Automation](#security-automation)
@@ -32,12 +32,12 @@ Our key security considerations and practices can be found below.
 
 ## Authentication of users
 
-For how we authenticate Comic Relief users, see the 
+For how we authenticate Comic Relief users, see the
 [external user access policy](authorization-policy.md#external-user-access-policy).
 
 ## Authorization controls
 
-For how we implement authorization controls, see the 
+For how we implement authorization controls, see the
 [service authorization controls policy](authorization-policy.md#service-authorization-controls).
 
 ## Audit trail
@@ -65,7 +65,7 @@ and also implement rules such as IP restrictions and rate limiting via the WAF.
 
 We utilise [Snyk](https://snyk.io/) and [GitHub Dependabot](https://dependabot.com/)
 to check dependencies at the pull request and pipeline level to ensure that there
-are no known security vulnerabilities within third party dependencies before shipping to production. 
+are no known security vulnerabilities within third party dependencies before shipping to production.
 
 ## Least Privileged Access
 
@@ -73,13 +73,13 @@ See our [authentication policy](authorization-policy.md) for how we implement ze
 
 ## Data leak prevention
 
-For automated tooling to ensure alignment to coding standards, read the 
+For automated tooling to ensure alignment to coding standards, read the
 [following section](tooling.md#coding-standards) on the tooling that we implement.
 
-For how we authenticate internal users, see the 
+For how we authenticate internal users, see the
 [internal user access policy](authorization-policy.md#internal-user-access-policy).
 
-For how we implement authorization controls, see the 
+For how we implement authorization controls, see the
 [service authorization controls policy](authorization-policy.md#service-authorization-controls).
 
 For how we penetration test and seek external validation of architectural decisions, see the
@@ -105,9 +105,9 @@ The following steps should be undertaken when retiring a service,
 - Remove DNS entries where relevant
 - Archive relevant GitHub repositories where necessary
 
-## End to End Observability
+## End-to-End Observability
 
-Many monitoring and security tools work at the OS or the VM level. This isn’t an option with serverless computing. 
+Many monitoring and security tools work at the OS or the VM level. This isn’t an option with serverless computing.
 Serverless requires monitoring performance at the invocation level.
 
 Inside all of our applications and services, we aim to surface any and all errors. This allows us to quickly quantify
@@ -115,8 +115,8 @@ and qualify issues for inspection.
 
 We implement [Epsagon](https://epsagon.com/) distributed tracing to provide us
 with automated data correlation, payload inspection, and
-end-to-end observability within all of our microservices. This allows us to reduce service costs and accelerate 
-development through reduced application downtime, faster shipping of features, and saved time in identifying and 
+end-to-end observability within all of our microservices. This allows us to reduce service costs and accelerate
+development through reduced application downtime, faster shipping of features, and saved time in identifying and
 correcting issues. It also allows us to specifically target suspicious behaviour.
 
 We also implement [Sentry](https://sentry.io/) on all of our backends and
@@ -130,7 +130,7 @@ this.
 
 ## Alignment with Best Practices
 
-We should always be aiming to align ourselves with the best standards available within our industry, whether by 
+We should always be aiming to align ourselves with the best standards available within our industry, whether by
 implementing best in class [coding standards](coding-standards.md), automating security testing as
 part of our [pipelines](pipelines.md), or by engaging external reviewers from the design stage to
 ensure that our architecture is the best fit.
@@ -139,7 +139,7 @@ Our core premise is to reduce and offload attack surface wherever possible. We d
 managed services wherever possible.
 
 Whenever implementing new services, we should be aiming to engage our cloud
-partners to provide insight into application 
+partners to provide insight into application
 design as part of our [production requirements](prodreq.md).
 
 We also implement [Prowler](https://github.com/toniblyx/prowler) as part of our

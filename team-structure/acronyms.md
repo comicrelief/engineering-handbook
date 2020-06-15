@@ -8,8 +8,8 @@
 - **EA** - Executive assistant to an Executive Director
 - **ED** - Executive Director of a department
 - **EDCO** - Provider of school information, used in several areas of the business.
-- **EDPOL** - BBC Editorial Policy –These editorial guidelines are the BBC's values and standards. They apply to all 
-our content, wherever and however it is received. As the BBC is our broadcast partner it is vital that we follow their 
+- **EDPOL** - BBC Editorial Policy –These editorial guidelines are the BBC's values and standards. They apply to all
+our content, wherever and however it is received. As the BBC is our broadcast partner it is vital that we follow their
 policies and guidelines.
 - **ELT** - Executive Leadership Team (our Executive Directors, COO & CEO)
 - **GMS** - Grants Management System, is the CRM in which we manage grants at comic relief.

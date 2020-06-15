@@ -1,7 +1,7 @@
 # Third Party Validation
 ***
 
-Both on a yearly basis and when provisioning new applications and services, we will engage security specialists and 
+Both on a yearly basis and when provisioning new applications and services, we will engage security specialists and
 industry leaders to conduct testing against,
 
 - Assets

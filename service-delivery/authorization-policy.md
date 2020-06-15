@@ -25,10 +25,10 @@ Under no situation should we ever have the need to roll our own cryptography or 
 
 ## Internal User Access Policy
 
-Centralized access management is key to ensuring that the correct team-members have access to the correct data and 
-systems and at the correct level. 
+Centralized access management is key to ensuring that the correct team-members have access to the correct data and
+systems and at the correct level.
 
-Our access controls are guided by the principle of least privilege and need-to-know. 
+Our access controls are guided by the principle of least privilege and need-to-know.
 These controls apply to information and information processing systems at the application and services.
 
 A team member or application should only be granted the minimum necessary access to perform their function. An access is
@@ -64,13 +64,13 @@ should be implemented in addition to the Comic Relief IT policy.
 
 #### 1. Use a password manager
 
-Use a password manager to store your passwords. This way, you only need to memorize a few strong passwords: your master 
-password for the password manager and your laptop password. Make sure that the password manager supports two factor 
+Use a password manager to store your passwords. This way, you only need to memorize a few strong passwords: your master
+password for the password manager and your laptop password. Make sure that the password manager supports two factor
 authentication and that the password manager password is unique.
 
 #### 2. Enable two factor authentication (if available)
 
-Use 2 factor authentication whenever it is available. This should allow you to mitigate most risks from password 
+Use 2 factor authentication whenever it is available. This should allow you to mitigate most risks from password
 compromise. We check and enforce this on a quarterly basis.
 
 #### 3. Use your Comic Relief email account
@@ -89,8 +89,8 @@ of 12 characters, for each service you use.
 
 ### Administrative permissions
 
-Administrative permissions should be considered operational in nature. This means that they are granted for the sole 
-purpose of system management, configuration, and support. They should be recognized as privileged accounts and as such, 
+Administrative permissions should be considered operational in nature. This means that they are granted for the sole
+purpose of system management, configuration, and support. They should be recognized as privileged accounts and as such,
 activities must be logged and the logs protected and regularly reviewed.
 
 ## Service Authorization Controls

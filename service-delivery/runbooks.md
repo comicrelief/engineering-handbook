@@ -6,7 +6,7 @@ incident management can go out the window in real-life situations. Our runbooks,
 alongside [gamedays](gamedays.md), aim to anticipate failure scenarios and plan
 for them.
 
-As part of our [production requirements](prodreq.md), runbooks should be created before a system is put into a 
+As part of our [production requirements](prodreq.md), runbooks should be created before a system is put into a
 production settings.
 
 At minimum, runbooks should analyse the following potential scenarios:
