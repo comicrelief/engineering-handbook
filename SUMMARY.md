@@ -40,6 +40,7 @@
 
 ## Team
 
+* [Acronyms & Definitions](team-structure/acronyms.md)
 * [OKRs](team-structure/okrs.md)
 * [Slack Channels](team-structure/slack-channels.md)
 
