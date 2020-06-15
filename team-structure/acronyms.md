@@ -3,7 +3,18 @@
 
 - **365** – Year-round fundraising activity.
 
+- **CDN** – Content Delivery Network.
+
+- **CI/CD** – Continuous Integration and Continuous Delivery. General term for
+  automated testing and deployment that happens as code gets written.
+
 - **Contentful** – Our content management system.
+
+- **CSC** – Our domain registrar. See
+  [Domain Management](../backend/domain-management.md).
+
+- **DPIA** – Data Protection Impact Assessment. See
+  [Production Requirements](../service-delivery/prodreq.md#data-protection-impact-assessment).
 
 - **Data Stores** – Data lakes where we store data from suppliers and internal
   systems.
@@ -30,8 +41,13 @@
 - **IVR** – Interactive Voice Response, an automated phone system to take
   donations.
 
+- **NCC** – One of our third-party security testers. See
+  [Third Party Validation](../service-delivery/third-party-validation.md#ncc).
+
 - **NOTV** – Night of TV, the night on which Comic Relief is on TV.
   Same as OTN.
+
+- **NPM** – The [NodeJS package repository](https://www.npmjs.com/).
 
 - **OMG** – Open Mobile Global. Provides call centres and backup donation
   systems.
@@ -45,11 +61,19 @@
 - **PLUS** – Postcode LookUp Service. Provides postcode lookups and address
   completion to our applications.
 
+- **RDS** – Amazon's [Relational Database Service](https://aws.amazon.com/rds).
+
 - **RND** – Red Nose Day.
 
 - **SR** – Sport Relief.
+
+- **SSO** – Single Sign-On. See
+  [Authorization Policy](../service-delivery/authorization-policy.md#sso).
 
 - **SSV** – Single Supporter View, our supporter data warehouse.
 
 - **Transactional Store** – A data lake containing all transactions within
   Comic Relief.
+
+- **VCS** – Version Control System. We use [Git](https://git-scm.com/) on
+  [GitHub](https://github.com/).
