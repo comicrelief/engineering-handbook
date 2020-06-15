@@ -10,7 +10,7 @@ Our aim is to continuously deliver all products and services that we are creatin
 * [Architectural Review](#architectural-review)
 * [Automated Backups](#automated-backups)
 * [Code Review](#code-review)
-* [Data Protection Impact Assessment](#data-protection-impact-assessment)
+* [Data Protection Impact Assessment](#data-protection-impact-assessment-dpia)
 * [Documentation](#documentation)
 * [Failover](#failover)
 * [Infrastructure as Code](#infrastructure-as-code)

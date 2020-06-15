@@ -14,7 +14,7 @@
   [Domain Management](../backend/domain-management.md).
 
 - **DPIA** – Data Protection Impact Assessment. See
-  [Production Requirements](../service-delivery/prodreq.md#data-protection-impact-assessment).
+  [Production Requirements](../service-delivery/prodreq.md#data-protection-impact-assessment-dpia).
 
 - **Data Stores** – Data lakes where we store data from suppliers and internal
   systems.
