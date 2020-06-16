@@ -17,3 +17,13 @@ standards and to be transparent with the tools we use.
 * Is your PR attached to an issue in GitHub?
 * We sometimes use GitHub projects for backlog organisation and for delivering our sprints. Don't use JIRA as that is not accessible to the general public.
 * Are tests provided in the PR? To ensure this, use a PR template and enable Circle CI for running a build with tests.
+
+## Open source licenses
+
+For our open-sourced projects, Comic Relief typically uses the ISC or MIT
+license (clarification needed).
+
+These resources are useful to help decide which license to use:
+
+- https://choosealicense.com/
+- https://opensource.org/licenses
