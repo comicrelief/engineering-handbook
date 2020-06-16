@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 
 ## Approaches
+
 * [Overview](service-delivery/overview.md)
 * [Application & Cloud Security](service-delivery/cloud-security.md)
 * [Authentication Policy](service-delivery/authorization-policy.md)
@@ -23,6 +24,7 @@
 * [Tooling](service-delivery/tooling.md)
 
 ## Disciplines
+
 * [Backend](backend/overview.md)
   * [Coding Standards](backend/coding-standards.md)
   * [Domain Management](backend/domain-management.md)
@@ -37,12 +39,13 @@
 * [QA](qa/manualQA.md)
 
 ## Team
+
 * [Acronyms & Definitions](team-structure/acronyms.md)
-* [OKR's](team-structure/okrs.md)
+* [OKRs](team-structure/okrs.md)
 * [Slack Channels](team-structure/slack-channels.md)
 
 ## External Resources
 
-* [Comic Relief Github](https://github.com/comicrelief)
+* [Comic Relief GitHub](https://github.com/comicrelief)
 * [Status Page](https://status.comicrelief.com/)
 * [Technology blog](https://medium.com/comic-relief)

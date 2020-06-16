@@ -1,70 +1,89 @@
 # Monitoring & Error Reporting
 ***
 
-## Providers
-
 We use a mixture of tools to provide a clear overview of what is happening at every stage and point within our systems.
 
-- [AWS Cloudwatch](#aws-cloudwatch)
-- [AWS Cloudtrail](#aws-cloudtrail)
+- [Slack](#slack)
+- [AWS CloudWatch](#aws-cloudwatch)
+- [AWS CloudTrail](#aws-cloudtrail)
 - [Epsagon](#epsagon)
 - [Sentry](#sentry)
 - [Status Page](#status-page)
 - [Wormly](#wormly)
 
-### AWS Cloudwatch
-All of our Serverless applications dump their logs to Cloudwatch.
+## Slack
 
-We will generally use Cloudwatch to dig deeper into errors once an error has been identified via Epsagon or Sentry.
+We use [Slack](https://slack.com/) as our instant messaging platform. Many of
+our monitoring tools post messages to Slack to quickly alert all relevant
+people when an incident occurs within our team.
 
-We also have a range of cloudwatch alarms monitoring resource that cannot be tracked using other tooling, these send
-alerting onwards to AWS chatbot and then onto Slack.
+See also our [list of Slack channels](../team-structure/slack-channels.md).
 
-### AWS Cloudtrail
+## AWS CloudWatch
 
-AWS CloudTrail provides compliance auditing by automatically recording and storing event logs for actions made within 
-all of our AWS account. It records all of our user and resource activity by recording AWS Management Console actions 
-and API calls.
+All of our Serverless applications dump their logs to
+[Amazon CloudWatch](https://aws.amazon.com/cloudwatch/).
 
-### Epsagon
-All of our Serverless applications implement Epsagon to log all invocations and the events that happened within them
+We will generally use CloudWatch to dig deeper into errors once an error has
+been identified via Epsagon or Sentry.
 
-Epsagon provides the following features within our services,
+We also have a range of CloudWatch alarms monitoring resources that cannot be
+tracked using other tooling. These send alerts on to AWS Chatbot and then onto
+Slack.
 
-- **Tagging** provides us with custom tagging, searchability of sed tags and alerting when sed tags arise.
+## AWS CloudTrail
+
+[AWS CloudTrail](https://aws.amazon.com/cloudtrail/) provides compliance
+auditing by automatically recording and storing event logs for all actions made
+within our AWS accounts. This includes all AWS Management Console actions and
+API calls.
+
+## Epsagon
+
+All of our Serverless applications implement [Epsagon](https://epsagon.com/) to
+log all function invocations and the events that happened within them.
+
+Epsagon provides the following features within our services:
+
+- **Tagging** provides us with custom tagging, searchability of tags and
+  alerting when certain tags arise.
 - **Timing** provides us with timing of external providers.
-- **Alerts** provides us with alerts to slack on any event of our choosing.
+- **Alerts** provides us with alerts to Slack on any event of our choosing.
 
-Epsagon is generally injected into all of our projects via the Lambda wrapper, with all timing and measurement logic
-being abstracted via lambda wrapper.
+Epsagon is injected into all of our projects via the
+[Lambda Wrapper](../backend/lambda-wrapper.md), with all timing and measurement
+logic abstracted in Lambda Wrapper's Logger dependency.
 
-### Sentry
-We use Sentry on both our frontend and backend applications to record exceptions and alert us to our issues.
+## Sentry
+
+We use [Sentry](https://sentry.io/) on both our frontend and backend
+applications to record exceptions and alert us to issues.
 
 Sentry is part of our core monitoring strategy and gives us error volumes, allowing us to immediately focus in on our
-biggest issues. It also automatically generates tickets in Github related to these issues.
+biggest issues. It also automatically generates tickets in GitHub related to these issues.
 
-All issues are reported to the relevant slack channels for a project and also generally via email.
+All issues are reported to the relevant Slack channels for a project and also generally via email.
 
-### Slack
-We use slack to alert all relevant people when an incident occurs within our team.
+## Status Page
 
-### Status Page
-We use statusif to report on all errors and to provide summaries of all issues that have happened within our systems.
+We use [Statusfy](https://statusfy.co/) to report on all errors and to provide
+summaries of all issues that have happened within our systems.
 It is the first port of call for issue and error updates for our stakeholders.
 
-We will generally create an error report within our status page when an issue happens and update the issue as problems are 
+We will generally create an error report within our status page when an issue happens and update the issue as problems are
 resolved.
 
-Updates to incidents are reported to slack.
+Updates to incidents are automatically reported to Slack.
 
-The status page is available at [status.comicrelief.com](https://status.comicrelief.com/)
+The status page is available at [status.comicrelief.com](https://status.comicrelief.com/).
 
-### Wormly
-We set up Wormly alerts on all of our public APIs, this provides immediate alerting if any of our public facing 
-endpoints go down or if SSL certificates are expiring.
+## Wormly
 
-All alerts from Wormly go to a range of slack channels alongside sending out email alerts.
+We set up [Wormly](https://www.wormly.com/) alerts on all of our public APIs.
+This provides immediate alerting if any of our public-facing endpoints go down,
+or if SSL certificates are expiring.
+
+All alerts from Wormly go to Slack as well as sending out email alerts.
 
 ## Further Reading
 

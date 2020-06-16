@@ -1,26 +1,31 @@
-# OKR's
+# OKRs
 ***
 
-OKRs stand for Objectives and Key Results and are our quarterly objectives.
+OKRs stands for *Objectives and Key Results*, and are our quarterly objectives.
 
-They lay out our plan to execute our strategy and help make sure our goals and how to achieve that are clearly defined 
-and aligned throughout our team. The Objectives help us understand what we're aiming to do, and the Key Results help 
-paint the picture of how we'll measure success of the objective.
+They lay out our plan to execute our strategy, and help make sure our goals
+(and how to achieve them) are clearly defined and aligned throughout our team.
+*Objectives* help us understand what we're aiming to achieve, while the
+*Key Results* help to paint a picture of how we'll measure the success of the
+objectives.
 
-OKR's will be conducted with your line manager.
+OKRs will be conducted with your line manager.
 
-We set new OKR's and review past quarter OKR's every quarter, our quarters are defined as follows,
+We set new OKRs and review the past quarter's OKRs every quarter. Quarters are
+defined as follows:
 
 * **Q1** - January to March
 * **Q2** - April to June
 * **Q3** - July to September
 * **Q4** - October to December
 
-It is important to note that we do not currently run OKR's in **Q1**, this quarter is usually taken up by campaign 
-delivery and by nature already has very defined goals and outcomes.
+Note that we do not currently run OKRs in **Q1**, as this quarter is usually
+taken up by campaign delivery and by nature already has well defined goals and
+outcomes.
 
-We utilise GTMHub to store and analyse OKR's, this can be accessed using your Comic Relief SSO login.
+We utilise [Gtmhub](https://gtmhub.com/) to store and analyse OKRs. This can be
+accessed using your Comic Relief SSO login (see below for the login link).
 
-### Relevant Links
+## Relevant Links
 
-- [GTMHub Login](https://app.gtmhub.com/login)
+- [Gtmhub Login](https://comicrelief.gtmhub.com/login)
