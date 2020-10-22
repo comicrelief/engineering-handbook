@@ -44,6 +44,10 @@
 * [OKRs](team-structure/okrs.md)
 * [Slack Channels](team-structure/slack-channels.md)
 
+## Documentation
+
+* [Architecture](docs/architecture.md)
+
 ## External Resources
 
 * [Comic Relief GitHub](https://github.com/comicrelief)
