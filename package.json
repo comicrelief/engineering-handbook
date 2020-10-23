@@ -14,6 +14,7 @@
   "author": "Comic Relief",
   "license": "MIT",
   "devDependencies": {
-    "gitbook-cli": "^2.3.0"
+    "gitbook-cli": "^2.3.0",
+    "gitbook-plugin-mermaid-gb3": "^2.1.0"
   }
 }
