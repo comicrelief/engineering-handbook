@@ -5,7 +5,7 @@ While we prefer in-code and live documentation over wiki pages, these are best s
 
 ## Supporter Events Service
 
-The service aims to propagate supporter data to User Service and supporter events to ERP Service.
+The service aims to propagate [supporter identities](https://github.com/comicrelief/data-models/tree/master/src/schemas/user-service/models/requests) to User Service and [supporter events](https://github.com/comicrelief/data-models/tree/master/src/schemas/erp/models/actions) to ERP Service.
 
 User Service and ERP Service exist on one region only because of their structure; should they be unavailable for any reason, propagation of data from upstream services may be interrupted. Supporter Events is a multi-region service designed to handle incoming traffic from all sources. Events are queued to SQS and processed one by one.
 
@@ -18,7 +18,7 @@ Supporter Service is supposed to handle only write requests to User Service and 
 
 Every service should be able to operate independently from User Service and ERP Service for all the critical paths; when a path is deemed non critical (i.e. it is acceptable to present a failure to an end user), User Service and ERP Service can be queued directly.
 
-While User Service and ERP Service are unlikely to be unavailable, under no circumstances a critical path upstream should depend on either, for read or writes, as they are not multiregional services.
+While User Service and ERP Service are unlikely to be unavailable, under no circumstances should a critical path upstream depend on either, for read or for writes, as they are not multiregional services.
 
 ### Supporter data flow
 
