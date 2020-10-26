@@ -7,7 +7,7 @@ While we prefer in-code and live documentation over wiki pages, these are best s
 
 ```mermaid
 graph LR
-  fundrasing-signups["Fundraising Sign-ups (Tom)"] --- event
+  fundraiser-signups["Fundraiser Signups (Tom)"] --- event
   giftaid["Giftaid (Corin)"] --- event
   prize-platform["Prize Platform (William)"] --- event
   sms[SMS] --- event
