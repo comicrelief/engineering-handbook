@@ -16,7 +16,7 @@ When identities are supplied to the `serverless-user-service` section of the pay
 - **For critical paths**: store a copy of the data in the service itself
 - **For non-critical paths**: gracefully handle request failures
 
-Critical path here means whether it is acceptable or not to present a failure to and end user.
+A **critical path** is one where it is not acceptable to present a failure to an end user.
 
 Every service should be able to operate independently from `serverless-user-service` and `serverless-erp-service` for all the critical paths; if a path is deemed non-critical, the services can and should be queued directly.
 
