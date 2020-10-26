@@ -51,17 +51,17 @@ graph LR
   classDef green fill:#8fd04e,stroke:#70a63b,stroke-width:2px;
   class fundraiser-signups,prize-platform green
 
-  click fundraiser-signups "https://github.com/comicrelief/serverless-contact-store" "Click to go to Contact Store repo"
-  click giftaid "https://github.com/comicrelief/serverless-giftaid" "Click to go to Giftaid repo"
-  click prize-platform "https://github.com/comicrelief/serverless-prize-platform" "Click to go to Prize Platform repo"
-  click psl "https://github.com/comicrelief/serverless-payments" "Click to go to Payments repo"
-  click marketing-prefs "https://github.com/comicrelief/serverless-marketing-preferences" "Click to go to Marketing Preferences repo"
+  click fundraiser-signups "https://github.com/comicrelief/serverless-contact-store" "Click to go to serverless-contact-store repo"
+  click giftaid "https://github.com/comicrelief/serverless-giftaid" "Click to go to serverless-giftaid repo"
+  click prize-platform "https://github.com/comicrelief/serverless-prize-platform" "Click to go to serverless-prize-platform repo"
+  click psl "https://github.com/comicrelief/serverless-payments" "Click to go to serverless-payments repo"
+  click marketing-prefs "https://github.com/comicrelief/serverless-marketing-preferences" "Click to go to serverless-marketing-preferences repo"
 
-  click event "https://github.com/comicrelief/supporter-event-service" "Click to go to Supporter Events Service repo"
-  click producer "https://github.com/comicrelief/supporter-event-service" "Click to go to Supporter Events Service repo"
-  click consumer "https://github.com/comicrelief/supporter-event-service" "Click to go to Supporter Events Service repo"
-  click action "https://github.com/comicrelief/supporter-event-service" "Click to go to Supporter Events Service repo"
+  click event "https://github.com/comicrelief/supporter-event-service" "Click to go to supporter-event-service repo"
+  click producer "https://github.com/comicrelief/supporter-event-service" "Click to go to supporter-event-service repo"
+  click consumer "https://github.com/comicrelief/supporter-event-service" "Click to go to supporter-event-service repo"
+  click action "https://github.com/comicrelief/supporter-event-service" "Click to go to supporter-event-service repo"
 
-  click user-service "https://github.com/comicrelief/serverless-user-service" "Click to go to User Service repo"
-  click erp-service "https://github.com/comicrelief/serverless-erp-service" "Click to go to ERP Service repo"
+  click user-service "https://github.com/comicrelief/serverless-user-service" "Click to go to serverless-user-service repo"
+  click erp-service "https://github.com/comicrelief/serverless-erp-service" "Click to go to serverless-erp-service repo"
 ```
