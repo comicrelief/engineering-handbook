@@ -21,7 +21,7 @@ We continuously strive to apply the following engineering principles in the way 
 * API-first
 * Cloud-native
 * Real-time data and monitoring
-* [Accessibility](frontend/accessibility.md) at the heart of everything
+* Accessibility at the heart of everything
 * Going beyond the screen
 
 We approach those principles in the following manner:
@@ -31,17 +31,18 @@ We approach those principles in the following manner:
   [12-factor apps](https://12factor.net/) where applicable.
 
 * Use of and contribute to open source software.
-  [Coding in the open as our default setting](service-delivery/code-in-open.md).
+  [Coding in the open](service-delivery/code-in-open.md) as our default setting.
 
-* [Continuous delivery](service-delivery/overview.md) backed up by
-  [automated testing](service-delivery/pull-requests.html#automated-tests--tasks).
+* [Continuous delivery](service-delivery/pipelines.md) backed up by
+  [automated testing](service-delivery/code-review.html#automated-tests--tasks).
   Deploy with confidence to production systems multiple times a day.
 
 * [Real-time monitoring of live products](service-delivery/monitoring.md)
   through dashboards (e.g. Grafana), logs (e.g. Epsagon, CloudWatch) and alerts
   (e.g. Wormly, Slack).
 
-* Everything in code and everything code-reviewed.
+* [Everything in code](service-delivery/prodreq.md#infrastructure-as-code) and
+  everything [code-reviewed](service-delivery/prodreq.md#code-review).
   In-code and live documentation over wiki documentation.
 
 ## How to contribue
