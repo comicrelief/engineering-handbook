@@ -18,7 +18,7 @@ When identities are supplied to the `serverless-user-service` section of the pay
 
 A **critical path** is one where it is not acceptable to present a failure to an end user.
 
-Every service should be able to operate independently from `serverless-user-service` and `serverless-erp-service` for all the critical paths; if a path is deemed non-critical, the services can and should be queued directly.
+Every service should be able to operate independently from `serverless-user-service` and `serverless-erp-service` for all the critical paths; if a path is deemed non-critical, the services can and should be queried directly.
 
 While `serverless-user-service` and `serverless-erp-service` are unlikely to be unavailable, under no circumstances should a critical path upstream depend on either, for read or for writes, as they are not multiregional services.
 
