@@ -26,7 +26,7 @@ While `serverless-user-service` and `serverless-erp-service` are unlikely to be 
 
 ```mermaid
 graph LR
-  fundraiser-signups["serverless-contact-store (Tom)"] --- event
+  fundraiser-signups["Fundraiser Signups (Tom)"] --- event
   giftaid["serverless-giftaid (Corin)"] --- event
   prize-platform["serverless-prize-platform (William)"] --- event
   sms[SMS] --- event
@@ -51,7 +51,6 @@ graph LR
   classDef green fill:#8fd04e,stroke:#70a63b,stroke-width:2px;
   class fundraiser-signups,prize-platform green
 
-  click fundraiser-signups "https://github.com/comicrelief/serverless-contact-store" "Click to go to serverless-contact-store repo"
   click giftaid "https://github.com/comicrelief/serverless-giftaid" "Click to go to serverless-giftaid repo"
   click prize-platform "https://github.com/comicrelief/serverless-prize-platform" "Click to go to serverless-prize-platform repo"
   click psl "https://github.com/comicrelief/serverless-payments" "Click to go to serverless-payments repo"
