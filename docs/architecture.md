@@ -9,7 +9,7 @@ The service aims to propagate [supporter identities](https://github.com/comicrel
 
 `serverless-user-service` and `serverless-erp-service` exist on one region only because of their structure; should they be unavailable for any reason, propagation of data from upstream services may be interrupted. `supporter-event-service` is a multi-region service designed to handle incoming traffic from all sources. Events are queued to SQS and processed one by one.
 
-When identities are supplied to the `serverless-user-service` section of the payload, `supporter-event-service` returns a salted hash of the identity that can be used by upstream services to identity resources, so that anonymisation won't break relationships between data and services.
+When identities are supplied to the `serverless-user-service` section of the payload, `supporter-event-service` returns a salted hash of the identity that can be used by upstream services to identify resources, so that anonymisation won't break relationships between data and services.
 
 `supporter-event-service` is supposed to handle only write requests to `serverless-user-service` and `serverless-erp-service`. If an upstream service requires data stored in either service, it should either:
 
@@ -21,6 +21,12 @@ A **critical path** is one where it is not acceptable to present a failure to an
 Every service should be able to operate independently from `serverless-user-service` and `serverless-erp-service` for all the critical paths; if a path is deemed non-critical, the services can and should be queried directly.
 
 While `serverless-user-service` and `serverless-erp-service` are unlikely to be unavailable, under no circumstances should a critical path upstream depend on either, for read or for writes, as they are not multiregional services.
+
+### Key links
+
+- [`supporter-event-service`](https://github.com/comicrelief/supporter-event-service)
+- [`serverless-user-service`](https://github.com/comicrelief/serverless-user-service)
+- [`serverless-erp-service`](https://github.com/comicrelief/serverless-erp-service)
 
 ### Supporter data flow
 
