@@ -30,6 +30,9 @@ While `serverless-user-service` and `serverless-erp-service` are unlikely to be 
 
 ### Supporter data flow
 
+For integration details see [Supporter Data Flow](supporter-data-flow.md)
+
+
 ```mermaid
 graph LR
   fundraiser-signups["Fundraiser Signups (Tom)"] --- event
