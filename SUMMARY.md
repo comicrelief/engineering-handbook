@@ -47,6 +47,7 @@
 ## Documentation
 
 * [Architecture](docs/architecture.md)
+* [Supporter Data Flow](docs/supporter-data-flow.md)
 
 ## External Resources
 
