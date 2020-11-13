@@ -23,19 +23,19 @@ In order to get the best out of Concourse, we should name pipelines, jobs and ta
 
 A pipeline name should match the associated repository name when possible. This will allow us to find a pipeline by copy-pasting the repository name.
 
-Example:
+**Example**
 - Repository: `serverless-user-service`
 - Pipeline: `serverless-user-service`
 
 #### Jobs
 
-A job name should be a lowercased, hypheneted string. The string should NOT be prefixed by the pipeline name.
+A job name should be a lowercased, hyphenated string. It should NOT be prefixed by the pipeline name.
 
 The string should go from more generic to more specific identifiers, describing what a job is supposed to do. We should always try to re-use words across pipelines and to keep the job names short, so that reviewing a pipeline is easier at glance. `test` and `deploy` are common prefixes.
 
 **Example**
 - Repository: `supporter-event-service`
-- Pipeline: `supporter-event-servide`
+- Pipeline: `supporter-event-service`
 - Job 1: `test-unit`
 - Job 2: `test-feat`
 - Job 3: `test-nightly`
@@ -45,7 +45,7 @@ The string should go from more generic to more specific identifiers, describing 
 
 #### Tasks
 
-A task name should be a lowercase, hypheneted string. Where the parent job contains only a task, the task name should match the job name. Otherwise, the task name should be composed by the job name, postfixed by a short description of the task.
+A task name should be a lowercase, hyphenated string. Where the parent job contains only a task, the task name should match the job name. Otherwise, the task name should be composed by the job name, postfixed by a short description of the task.
 
 **Example 1**
 - Repository: `serverless-user-service`
