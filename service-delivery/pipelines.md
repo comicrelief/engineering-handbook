@@ -21,7 +21,7 @@ In order to get the best out of Concourse, we should name pipelines, jobs and ta
 
 #### Pipelines
 
-Pipelines name should match the associated repository name when possible. This will allow us to find a pipeline by copy-pasting the repository name.
+A pipeline name should match the associated repository name when possible. This will allow us to find a pipeline by copy-pasting the repository name.
 
 Example:
 - Repository: `serverless-user-service`
@@ -29,9 +29,9 @@ Example:
 
 #### Jobs
 
-Jobs names should be lowercased, hypheneted strings. The string should NOT be prefixed by the pipeline name.
+A job name should be a lowercased, hypheneted string. The string should NOT be prefixed by the pipeline name.
 
-The string should go from more generic to more specific identifiers, describing what a job is supposed to do. We should always try to re-use words across pipelines and to keep the job names short, so that reviewing a pipeline is easier at glance.
+The string should go from more generic to more specific identifiers, describing what a job is supposed to do. We should always try to re-use words across pipelines and to keep the job names short, so that reviewing a pipeline is easier at glance. `test` and `deploy` are common prefixes.
 
 **Example**
 - Repository: `supporter-event-service`
@@ -45,7 +45,7 @@ The string should go from more generic to more specific identifiers, describing 
 
 #### Tasks
 
-Tasks name should be lowercase, hypheneted strings. Where the parent job contains only a task, the task name should match the job name. Otherwise, the task name should be composed by the job name, postfixed by a short description of the task.
+A task name should be a lowercase, hypheneted string. Where the parent job contains only a task, the task name should match the job name. Otherwise, the task name should be composed by the job name, postfixed by a short description of the task.
 
 **Example 1**
 - Repository: `serverless-user-service`
@@ -55,8 +55,9 @@ Tasks name should be lowercase, hypheneted strings. Where the parent job contain
 **Example 2**
 - Repository: `serverless-prize-platform`
 - Job: `deploy-production`
-- Task1: `deploy-production-primary`
-- Task2: `deploy-production-secondary`
+- Task 1: `deploy-production-primary`
+- Task 2: `deploy-production-sleep-5-minutes`
+- Task 3: `deploy-production-secondary`
 
 ## Relevant Articles
 
