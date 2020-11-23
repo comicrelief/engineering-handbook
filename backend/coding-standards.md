@@ -24,6 +24,32 @@ For our PHP projects we use [PHPCS](https://github.com/squizlabs/PHP_CodeSniffer
 
 We also use [PHPCD](https://github.com/sebastianbergmann/phpcpd) to ensure that code is not duplicated within the project.
 
+## AWS Resource Naming
+
+Historic resources don't follow an agreed convention. However, for all new resources, both in old and new projects, we should follow the schema:
+
+`${service-name}-${service-stage}-${resource-type}-${resource-label}`
+
+**Example 1**
+- Where: `sls-best-of` (_staging_)
+- What: DynamoDB Table
+- Why: Keep references of the most interesting books we read
+- Resource: `sls-best-of-staging-dynamodb-best-books`
+
+**Example 2**
+- Where: `sls-best-of` (_production_)
+- What: DynamoDB Table
+- Why: Keep references of the most interesting books we read
+- Resource: `sls-best-of-production-dynamodb-best-books`
+
+**Example 3**
+- Where: `sls-best-of` (_staging_)
+- What: S3 Bucket
+- Why: Store photos of the best dishes we cooked
+- Resource: `sls-best-of-staging-s3-best-meals-photos`
+
+The advantage of the naming convention is that conveys all the required information to uniquely identity the _where_, _what_ and _why_ of a resource, without relying on contextual information.
+
 ## Further Reading
 
 - [Secure development and deployment guidance](https://www.ncsc.gov.uk/collection/developers-collection?curPage=/collection/developers-collection/principles/produce-clean-maintainable-code)
