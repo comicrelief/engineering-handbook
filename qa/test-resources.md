@@ -11,3 +11,23 @@ Test credit cards are to be used in user journeys that require payments / donati
 World Pay supplies a test credit cards page allowing us to simulate most credit card vendors:
 
 https://developer.worldpay.com/docs/wpg/reference/testvalues#test-card-numbers
+
+### Braintree
+
+Braintree test credit cards page 
+
+https://developers.braintreepayments.com/guides/credit-cards/testing-go-live/php
+
+### Stripe
+
+Stripe test card numbers page
+
+https://stripe.com/docs/testing
+
+### Paypal
+
+Paypal test account 
+
+email: paypal_sponsorship-buyer@comicrelief.com
+
+password: frostuser
