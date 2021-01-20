@@ -26,7 +26,7 @@ https://stripe.com/docs/testing
 
 ### Paypal
 
-Paypal test account 
+Paypal sandbox account 
 
 email: paypal_sponsorship-buyer@comicrelief.com
 
