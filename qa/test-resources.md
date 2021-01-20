@@ -26,8 +26,7 @@ https://stripe.com/docs/testing
 
 ### Paypal
 
-Paypal sandbox account 
+For paypal sandbox account details see below:
 
-email: paypal_sponsorship-buyer@comicrelief.com
+https://github.com/comicrelief/react-donation/blob/889e2a4fc34795e3136a705f2f5d49ec42ee76e6/tests/commands/paypal.js#L5
 
-password: frostuser
