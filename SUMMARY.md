@@ -36,7 +36,9 @@
   * Shared Libraries
       * [Pattern Lab](frontend/pattern-lab.md)
       * [React Storybook](frontend/storybook.md)
-* [QA](qa/manualQA.md)
+* QA
+  * [Manual QA](qa/manualQA.md)
+  * [Test Resources](qa/test-resources.md)
 
 ## Team
 
