@@ -31,9 +31,8 @@ contain both the cross-functional team and error logging for that application.
 
 ## Application-Specific
 
-- **#cms-rebuild** - Badly named, but anything related to the contentful CMS.
+- **#devs-crcom** - Badly named, but anything related to the contentful CMS.
 - **#cr-donate** - Everything related to the online donation platform.
-- **#cr-site-dev** - Anything related to comic relief webiste development.
 - **#workflow (private)** - Discussion regarding the workflow platform.
 
 ## Campaign Operations
