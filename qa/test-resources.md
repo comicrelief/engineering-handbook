@@ -30,3 +30,11 @@ For paypal sandbox account details see below:
 
 https://github.com/comicrelief/react-donation/blob/889e2a4fc34795e3136a705f2f5d49ec42ee76e6/tests/commands/paypal.js#L5
 
+### GoCardless
+
+Account Holder Name: 'any test name'
+
+Account Number: 55779911
+
+Sort Code: 200000
+  
